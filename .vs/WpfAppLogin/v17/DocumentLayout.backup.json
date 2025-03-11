@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "D:\\Cshap_Project\\WpfAppLogin\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{35A7B851-ECDC-4FA4-9B0F-0DFA9FA9AC93}|WpfAppLogin.csproj|d:\\cshap_project\\wpfapplogin\\wpfapplogin.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{35A7B851-ECDC-4FA4-9B0F-0DFA9FA9AC93}|WpfAppLogin.csproj|solutionrelative:wpfapplogin.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{35A7B851-ECDC-4FA4-9B0F-0DFA9FA9AC93}|WpfAppLogin.csproj|d:\\cshap_project\\wpfapplogin\\index.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{35A7B851-ECDC-4FA4-9B0F-0DFA9FA9AC93}|WpfAppLogin.csproj|solutionrelative:index.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
@@ -56,7 +60,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 10,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -64,18 +68,29 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 0,
+              "Title": "WpfAppLogin",
+              "DocumentMoniker": "D:\\Cshap_Project\\WpfAppLogin\\WpfAppLogin.csproj",
+              "RelativeDocumentMoniker": "WpfAppLogin.csproj",
+              "ToolTip": "D:\\Cshap_Project\\WpfAppLogin\\WpfAppLogin.csproj",
+              "RelativeToolTip": "WpfAppLogin.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-03-11T04:49:10.357Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "XamlReader.cs",
               "DocumentMoniker": "C:\\Users\\24822\\AppData\\Local\\Temp\\.vsdbgsrc\\811f0c1102ba7a3d32ee827d0bb52f1af2ec958c7f3fb7abe7c05f601195e6c8\\XamlReader.cs",
               "ToolTip": "C:\\Users\\24822\\AppData\\Local\\Temp\\.vsdbgsrc\\811f0c1102ba7a3d32ee827d0bb52f1af2ec958c7f3fb7abe7c05f601195e6c8\\XamlReader.cs",
               "ViewState": "AgIAAKYBAAAAAAAAAAASwLQBAAAoAAAAAQAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-10T13:11:27.903Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-10T13:11:27.903Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "App.xaml",
               "DocumentMoniker": "D:\\Cshap_Project\\WpfAppLogin\\App.xaml",
               "RelativeDocumentMoniker": "App.xaml",
@@ -87,18 +102,17 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "Microsoft.Common.CurrentVersion.targets",
               "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
               "ToolTip": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
               "ViewState": "AgIAANsUAAAAAAAAAAAAwPMUAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
-              "WhenOpened": "2025-03-02T13:00:11.459Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-02T13:00:11.459Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "RelayCommond.cs",
               "DocumentMoniker": "D:\\Cshap_Project\\WpfAppLogin\\RelayCommond\\RelayCommond.cs",
               "RelativeDocumentMoniker": "RelayCommond\\RelayCommond.cs",
@@ -106,12 +120,11 @@
               "RelativeToolTip": "RelayCommond\\RelayCommond.cs",
               "ViewState": "AgIAABcAAAAAAAAAAABQwDkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-02T11:29:36.926Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-02T11:29:36.926Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "App.xaml.cs",
               "DocumentMoniker": "D:\\Cshap_Project\\WpfAppLogin\\App.xaml.cs",
               "RelativeDocumentMoniker": "App.xaml.cs",
@@ -119,12 +132,11 @@
               "RelativeToolTip": "App.xaml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAADwvwoAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-02T05:26:17.155Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-02T05:26:17.155Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "LoginVm.cs",
               "DocumentMoniker": "D:\\Cshap_Project\\WpfAppLogin\\VM\\LoginVm.cs",
               "RelativeDocumentMoniker": "VM\\LoginVm.cs",
@@ -132,12 +144,11 @@
               "RelativeToolTip": "VM\\LoginVm.cs",
               "ViewState": "AgIAAB4AAAAAAAAAAAAowDwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-02T04:58:27.204Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-02T04:58:27.204Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "AssemblyInfo.cs",
               "DocumentMoniker": "D:\\Cshap_Project\\WpfAppLogin\\AssemblyInfo.cs",
               "RelativeDocumentMoniker": "AssemblyInfo.cs",
@@ -145,12 +156,11 @@
               "RelativeToolTip": "AssemblyInfo.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-02T04:54:16.017Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-02T04:54:16.017Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "LoginModel.cs",
               "DocumentMoniker": "D:\\Cshap_Project\\WpfAppLogin\\Model\\LoginModel.cs",
               "RelativeDocumentMoniker": "Model\\LoginModel.cs",
@@ -158,12 +168,11 @@
               "RelativeToolTip": "Model\\LoginModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAADwvwYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-02T04:54:12.236Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-02T04:54:12.236Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "index.xaml.cs",
               "DocumentMoniker": "D:\\Cshap_Project\\WpfAppLogin\\index.xaml.cs",
               "RelativeDocumentMoniker": "index.xaml.cs",
@@ -171,36 +180,34 @@
               "RelativeToolTip": "index.xaml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAADwvxMAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-01T08:47:04.437Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-01T08:47:04.437Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "index.xaml",
               "DocumentMoniker": "D:\\Cshap_Project\\WpfAppLogin\\index.xaml",
               "RelativeDocumentMoniker": "index.xaml",
-              "ToolTip": "D:\\Cshap_Project\\WpfAppLogin\\index.xaml*",
-              "RelativeToolTip": "index.xaml*",
+              "ToolTip": "D:\\Cshap_Project\\WpfAppLogin\\index.xaml",
+              "RelativeToolTip": "index.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-03-01T08:44:58.696Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "D:\\Cshap_Project\\WpfAppLogin\\MainWindow.xaml",
               "RelativeDocumentMoniker": "MainWindow.xaml",
               "ToolTip": "D:\\Cshap_Project\\WpfAppLogin\\MainWindow.xaml",
               "RelativeToolTip": "MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-03-01T06:16:24.784Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-01T06:16:24.784Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "D:\\Cshap_Project\\WpfAppLogin\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "MainWindow.xaml.cs",
@@ -208,8 +215,7 @@
               "RelativeToolTip": "MainWindow.xaml.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAlwBsAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-01T06:00:30.605Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-01T06:00:30.605Z"
             }
           ]
         }
