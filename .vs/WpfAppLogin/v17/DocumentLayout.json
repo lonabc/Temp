@@ -75,8 +75,7 @@
               "ToolTip": "D:\\Cshap_Project\\WpfAppLogin\\WpfAppLogin.csproj",
               "RelativeToolTip": "WpfAppLogin.csproj",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-03-11T04:49:10.357Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-11T04:49:10.357Z"
             },
             {
               "$type": "Document",
@@ -144,8 +143,7 @@
               "RelativeToolTip": "VM\\LoginVm.cs",
               "ViewState": "AgIAAB4AAAAAAAAAAAAowDwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-02T04:58:27.204Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-02T04:58:27.204Z"
             },
             {
               "$type": "Document",
@@ -189,8 +187,8 @@
               "Title": "index.xaml",
               "DocumentMoniker": "D:\\Cshap_Project\\WpfAppLogin\\index.xaml",
               "RelativeDocumentMoniker": "index.xaml",
-              "ToolTip": "D:\\Cshap_Project\\WpfAppLogin\\index.xaml*",
-              "RelativeToolTip": "index.xaml*",
+              "ToolTip": "D:\\Cshap_Project\\WpfAppLogin\\index.xaml",
+              "RelativeToolTip": "index.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-03-01T08:44:58.696Z",
               "EditorCaption": ""
@@ -204,8 +202,7 @@
               "ToolTip": "D:\\Cshap_Project\\WpfAppLogin\\MainWindow.xaml",
               "RelativeToolTip": "MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-03-01T06:16:24.784Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-01T06:16:24.784Z"
             },
             {
               "$type": "Document",
