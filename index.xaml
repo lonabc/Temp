@@ -12,7 +12,7 @@
 
         <Label Margin="10">原生控件</Label>
         <Button Content="普通按钮" Width="100" Height="40" />
-        <!-- 使用 HandyControl 的控件，例如按钮 -->
+        <!-- 使用 HandyControl 的控件，例如按钮1 -->
         
 
     </StackPanel>
