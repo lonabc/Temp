@@ -5,13 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfAppLogin"
         xmlns:hc="https://handyorg.github.io/handycontrol"
+        xmlns:lvc="clr-namespace:LiveChartsCore.SkiaSharpView.WPF;assembly=LiveChartsCore.SkiaSharpView.WPF"
         mc:Ignorable="d"
         Title="index" Height="550" Width="800">
 
     <Window.Resources>
         <Style TargetType="Button" x:Key="TestButton">
         </Style>
-        <FontFamily x:Key="font">C:\Users\34015\Desktop\Temp\TempWeb\Recesource\images\云.png</FontFamily>
         <BitmapImage x:Key="yun" UriSource="pack://application:,,,/Recesource/images/yun.png" />
     </Window.Resources>
     <Grid ShowGridLines="True" Background="#101f30" >
@@ -40,7 +40,7 @@
                     <hc:Card.Footer>
                         <StackPanel Height="63"  Margin="0,18,0,0">
                             <hc:Row  HorizontalAlignment="Center" Width="400" Height="16" RenderTransformOrigin="0.5,0.5"  Margin="0">
-                               
+
                                 <hc:Col Span="3" >
                                     <TextBlock Margin="10,0,0,0">+25 *C</TextBlock>
                                 </hc:Col>
@@ -57,10 +57,18 @@
                     </hc:Card.Footer>
                 </hc:Card>
             </StackPanel>
+            <Grid Grid.Row="2">
+                <lvc:CartesianChart
+                 Series="{Binding Series}"
+                    XAxes="{Binding XLabels}"
+                    YAxes="{Binding YAxes}"
+                    x:Name="chart" />
+
+            </Grid>
 
         </Grid>
-
         <Grid Grid.Column="1">
+
 
         </Grid>
 
