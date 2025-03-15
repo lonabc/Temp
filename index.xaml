@@ -6,15 +6,63 @@
         xmlns:local="clr-namespace:WpfAppLogin"
         xmlns:hc="https://handyorg.github.io/handycontrol"
         mc:Ignorable="d"
-        Title="index" Height="450" Width="800">
- 
-    <StackPanel>
+        Title="index" Height="550" Width="800">
 
-        <Label Margin="10">原生控件</Label>
-        <Button Content="普通按钮" Width="100" Height="40" />
-        <!-- 使用 HandyControl 的控件，例如按钮1 -->
-        <Button Content="测试"  Style="{StaticResource ButtonDashedInfo}"   Margin="5"/>
-        <Button Content="wpf项目测试" Style="{StaticResource ButtonPrimary}"/>
-        <Button Content="项目测试完成"/>
-    </StackPanel>
+    <Window.Resources>
+        <Style TargetType="Button" x:Key="TestButton">
+        </Style>
+        <FontFamily x:Key="font">C:\Users\34015\Desktop\Temp\TempWeb\Recesource\images\云.png</FontFamily>
+        <BitmapImage x:Key="yun" UriSource="pack://application:,,,/Recesource/images/yun.png" />
+    </Window.Resources>
+    <Grid ShowGridLines="True" Background="#101f30" >
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="2*"/>
+        </Grid.ColumnDefinitions>
+        <Grid ShowGridLines="True">
+            <Grid.RowDefinitions >
+                <RowDefinition Height="3*" />
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="3*" />
+            </Grid.RowDefinitions>
+            <StackPanel>
+                <hc:SearchBar Grid.Column="0" Grid.Row="0" Command="{Binding SearchCmd}" Height="19" VerticalAlignment="Top" Margin="15,8,10,0" CommandParameter="{Binding Text,RelativeSource={RelativeSource Self}}"/>
+                <hc:Card BorderThickness="0" Effect="{DynamicResource EffectShadow2}" Margin="16,10,0,0" Height="150" Background="#475164" Width="400" HorizontalAlignment="Left" Opacity="0.5">
+                    <hc:Card.Header>
+                        <TextBlock Text="Hi Lisa!" FontSize="16" FontWeight="Bold" Margin="10,0,0,0"/>
+                    </hc:Card.Header>
+                    <!--Card 的内容部分-->
+                    <Border CornerRadius="4,4,0,0" Width="160" Height="50">
+                        <TextBlock TextWrapping="Wrap" VerticalAlignment="Center" HorizontalAlignment="Left" 
+                                   Text="Welcome Home! The air quality is good . Fresh you can go out today" Margin="-112,0,0,0" Width="285"/>
+                    </Border>
+                    <!--Card 的尾部部分-->
+                    <hc:Card.Footer>
+                        <StackPanel Height="63"  Margin="0,18,0,0">
+                            <hc:Row  HorizontalAlignment="Center" Width="400" Height="16" RenderTransformOrigin="0.5,0.5"  Margin="0">
+                               
+                                <hc:Col Span="3" >
+                                    <TextBlock Margin="10,0,0,0">+25 *C</TextBlock>
+                                </hc:Col>
+                                <hc:Col Span="12" >
+                                    <Image Source="{StaticResource yun}" Width="16" Height="38" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                                </hc:Col>
+                            </hc:Row>
+                            <hc:Row Height="28" Margin="0">
+                                <hc:Col>
+                                    <TextBlock FontSize="11" HorizontalAlignment="Left" TextWrapping="Wrap" Width="150" Margin="10,0,0,0"><Run Text="outdoor temperature Fuzzy cloudy weather"/></TextBlock>
+                                </hc:Col>
+                            </hc:Row>
+                        </StackPanel>
+                    </hc:Card.Footer>
+                </hc:Card>
+            </StackPanel>
+
+        </Grid>
+
+        <Grid Grid.Column="1">
+
+        </Grid>
+
+    </Grid>
 </Window>
