@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WpfAppLogin")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d904b3b99f44d30f63ad47c0404edd1425e78823")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+769b99c46930dc88958c9beef38f10ccc76435c6")]
 [assembly: System.Reflection.AssemblyProductAttribute("WpfAppLogin")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WpfAppLogin")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
