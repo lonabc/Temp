@@ -24,3 +24,4 @@ D:\Cshap_Project\WpfAppLogin\obj\Debug\net8.0-windows\ref\WpfAppLogin.dll
 D:\Cshap_Project\WpfAppLogin\bin\Debug\net8.0-windows\HandyControl.dll
 D:\Cshap_Project\WpfAppLogin\obj\Debug\net8.0-windows\WpfAppLogin.csproj.AssemblyReference.cache
 D:\Cshap_Project\WpfAppLogin\obj\Debug\net8.0-windows\WpfAppLo.609F5654.Up2Date
+D:\Cshap_Project\WpfAppLogin\obj\Debug\net8.0-windows\WpfAppLogin.sourcelink.json

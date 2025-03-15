@@ -13,7 +13,8 @@
         <Label Margin="10">原生控件</Label>
         <Button Content="普通按钮" Width="100" Height="40" />
         <!-- 使用 HandyControl 的控件，例如按钮1 -->
-        
-
+        <Button Content="测试"  Style="{StaticResource ButtonDashedInfo}"   Margin="5"/>
+        <Button Content="wpf项目测试" Style="{StaticResource ButtonPrimary}"/>
+        <Button Content="项目测试完成"/>
     </StackPanel>
 </Window>
