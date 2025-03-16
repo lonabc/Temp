@@ -14,6 +14,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using WpfSample;
+using WpfAppLogin.Model;
+using WpfAppLogin.VM;
 
 namespace WpfAppLogin
 {
@@ -24,11 +26,20 @@ namespace WpfAppLogin
     
     public partial class index 
     {
-
+        private SocketWpf _socketClient;
         public index()
         {
             InitializeComponent();
-            this.DataContext = new ViewModels(); //绑定ViewModel数据源
+            this.DataContext = new ViewModelMove(); //绑定ViewModel数据源
+            _socketClient =new SocketWpf(); //wpf里socket初始化
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            String message = "SocketTest";
+            MessageBox.Show("方法以及执行");
+
+            _socketClient.SendDataAsync(message); //触发发送
         }
     }
 }

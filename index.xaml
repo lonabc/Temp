@@ -59,16 +59,16 @@
             </StackPanel>
             <Grid Grid.Row="2">
                 <lvc:CartesianChart
-                 Series="{Binding Series}"
-                    XAxes="{Binding XLabels}"
-                    YAxes="{Binding YAxes}"
-                    x:Name="chart" />
+                Series="{Binding Series}"
+                XAxes="{Binding XAxes}"
+                YAxes="{Binding YAxes}"
+                x:Name="chart" />
 
             </Grid>
 
         </Grid>
         <Grid Grid.Column="1">
-
+            <Button Style="{StaticResource ButtonPrimary}" Content="这是一个按钮" Click="Button_Click"/>
 
         </Grid>
 

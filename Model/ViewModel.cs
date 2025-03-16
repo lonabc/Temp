@@ -36,15 +36,15 @@ namespace WpfSample // livecharts 折线图数据设置
                 {
                     Name = "X轴",
                  //   Labels = new List<string> { "A", "B", "C", "D", "E" },
-                    TextSize = 12,
-                    NameTextSize = 14,
-                    NamePadding = new LiveChartsCore.Drawing.Padding(0, 10),
+                    TextSize = 12,// 标签字体大小
+                    NameTextSize = 14,// 标签坐标轴字体大小
+                    NamePadding = new LiveChartsCore.Drawing.Padding(0, 10),  // 坐标轴名称的内边距
                     LabelsRotation = 45 //标签斜45度
                 }
             };
-            XLables = new ObservableCollection<double> { 1, 2, 3, 4, 5, 6, 7 };
+            XLables = new ObservableCollection<double> { 1, 2, 3, 4, 5, 6, 7 };// 绑定横坐标标签
 
-             YAxes = new ObservableCollection<Axis>
+            YAxes = new ObservableCollection<Axis>
             {
                 new Axis
                 {
