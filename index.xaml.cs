@@ -16,6 +16,7 @@ using System.Windows.Shapes;
 using WpfSample;
 using WpfAppLogin.Model;
 using WpfAppLogin.VM;
+using HandyControl.Controls;
 
 namespace WpfAppLogin
 {
@@ -30,16 +31,27 @@ namespace WpfAppLogin
         public index()
         {
             InitializeComponent();
-            this.DataContext = new ViewModelMove(); //绑定ViewModel数据源
+            this.DataContext = new ViewModelDev(); //绑定ViewModel数据源
             _socketClient =new SocketWpf(); //wpf里socket初始化
+
+            // 订阅 SizeChanged 事件
+            //this.SizeChanged += Window_SizeChanged;
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             String message = "SocketTest";
-            MessageBox.Show("方法以及执行");
 
             _socketClient.SendDataAsync(message); //触发发送
+        }
+
+        private void Window_SizeChanged(object sender, SizeChangedEventArgs e)
+        {
+            // 根据窗口大小动态调整 Card 的宽度和高度
+            double newWidth = e.NewSize.Width * 0.8; // 例如，宽度为窗口宽度的 80%
+            double newHeight = e.NewSize.Height * 0.4; // 例如，高度为窗口高度的 20%
+            myCard.Width = newWidth;
+            myCard.Height = newHeight;
         }
     }
 }
