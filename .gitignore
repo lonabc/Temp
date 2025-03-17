@@ -10,3 +10,7 @@ obj/
 *.suo
 *.user
 /CC_SMSC.v11.suo
+.vs/ProjectEvaluation/wpfapplogin.metadata.v9.bin
+/.vs
+*.bin
+*.bin
