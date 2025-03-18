@@ -7,17 +7,41 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Threading;
+using System.ComponentModel;
+using System.Windows;
+using HandyControl.Data;
 
 namespace WpfAppLogin.Model
 {
 
-    public class ViewModelDev
+    public class ViewModelDev : INotifyPropertyChanged
     {
 
         // 数据系列
         public ISeries[] Series { get; set; }
 
         public static int valueTemp;
+
+        private  string _tempView="25°C";
+        public string tempView
+        {
+            get { return _tempView; }
+            set
+            {
+                if (_tempView != value)
+                {
+                    _tempView = value;
+                    RaisePropertyChanged(nameof(tempView)); // 通知UI UserName 属性已更改
+                }
+            }
+        }
+
+        public event PropertyChangedEventHandler PropertyChanged;
+
+        protected void RaisePropertyChanged(string propertyName)
+        {
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+        }
 
         // 横坐标轴
         public ObservableCollection<Axis> XAxes { get; set; }
@@ -65,12 +89,12 @@ namespace WpfAppLogin.Model
             {
                 new Axis
                 {
-                    Name = "Y轴", // 坐标轴名称
+                    Name = "Temperature", // 坐标轴名称
                     TextSize = 12, // 标签字体大小
                     NameTextSize = 14, // 坐标轴名称字体大小
                     NamePadding = new LiveChartsCore.Drawing.Padding(0, 10), // 坐标轴名称的内边距
                     MinLimit = 5, // Y轴最小值
-                    MaxLimit = 20 // Y轴最大值
+                    MaxLimit = 30 // Y轴最大值
                 }
             };
 
@@ -87,10 +111,13 @@ namespace WpfAppLogin.Model
         }
         private void OnTimerTick(ObservableCollection<double> values, ObservableCollection<string> xLabels) //定时回调方法
         {
+            
             // 添加新的横坐标标签（当前时间）
             string newX = DateTime.Now.ToString("HH:mm:ss"); // 当前时间
             xLabels.Add(newX);
-
+          
+             tempView = valueTemp.ToString()+ "°C";
+           
             // 添加新的数据点
             double smallTmep = _random.Next(10, 500); // 随机生成一个值
             smallTmep = smallTmep / 1000;
@@ -98,11 +125,12 @@ namespace WpfAppLogin.Model
             values.Add(newValue);
 
             // 如果数据点太多，移除最旧的数据点
-            if (xLabels.Count > 11)
+            if (xLabels.Count > 5)
             {
                 xLabels.RemoveAt(0);
                 values.RemoveAt(0);
             }
         }
+
     }
 }

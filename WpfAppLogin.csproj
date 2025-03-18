@@ -9,6 +9,11 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Recesource\images\iceCold.png" />
+    <None Remove="Recesource\images\light.png" />
+    <None Remove="Recesource\images\sun.png" />
+    <None Remove="Recesource\images\Temp.png" />
+    <None Remove="Recesource\images\TempRed.png" />
     <None Remove="Recesource\images\yun.png" />
   </ItemGroup>
 
@@ -18,6 +23,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="Recesource\images\iceCold.png" />
+    <Resource Include="Recesource\images\sun.png" />
+    <Resource Include="Recesource\images\Temp.png" />
+    <Resource Include="Recesource\images\TempRed.png" />
     <Resource Include="Recesource\images\yun.png" />
   </ItemGroup>
 
