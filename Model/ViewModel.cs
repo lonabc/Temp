@@ -16,6 +16,7 @@ namespace WpfSample // livecharts 折线图数据设置
 {
     public class ViewModels
     {
+        
         public ISeries[] Series { get; set; }
             = new ISeries[]
             {

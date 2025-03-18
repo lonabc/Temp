@@ -7,7 +7,7 @@
         xmlns:hc="https://handyorg.github.io/handycontrol"
         xmlns:lvc="clr-namespace:LiveChartsCore.SkiaSharpView.WPF;assembly=LiveChartsCore.SkiaSharpView.WPF"
         mc:Ignorable="d"
-        Title="index" Height="550" Width="800">
+        Title="index" Height="600" Width="800">
 
     <Window.Resources>
         <Style TargetType="Button" x:Key="TestButton">
@@ -18,45 +18,52 @@
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="3*"/>
             <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="Auto" />
         </Grid.ColumnDefinitions>
         <Grid ShowGridLines="True">
             <Grid.RowDefinitions >
                 <RowDefinition Height="3*" />
                 <RowDefinition Height="1*" />
                 <RowDefinition Height="3*" />
+                <RowDefinition Height="Auto" />
             </Grid.RowDefinitions>
-            <StackPanel>
+            <Viewbox Stretch="Fill" Margin="0,0,5,5">
+                <StackPanel Grid.Row="0">
                 <hc:SearchBar Grid.Column="0" Grid.Row="0" Command="{Binding SearchCmd}" Height="19" VerticalAlignment="Top" Margin="15,8,10,0" CommandParameter="{Binding Text,RelativeSource={RelativeSource Self}}"/>
-                <hc:Card BorderThickness="0" Effect="{DynamicResource EffectShadow2}" Margin="16,10,0,0" Height="150" Background="#475164" Width="400" HorizontalAlignment="Left" Opacity="0.5">
-                    <hc:Card.Header>
-                        <TextBlock Text="Hi Lisa!" FontSize="16" FontWeight="Bold" Margin="10,0,0,0"/>
-                    </hc:Card.Header>
-                    <!--Card 的内容部分-->
-                    <Border CornerRadius="4,4,0,0" Width="160" Height="50">
-                        <TextBlock TextWrapping="Wrap" VerticalAlignment="Center" HorizontalAlignment="Left" 
-                                   Text="Welcome Home! The air quality is good . Fresh you can go out today" Margin="-112,0,0,0" Width="285"/>
-                    </Border>
-                    <!--Card 的尾部部分-->
-                    <hc:Card.Footer>
-                        <StackPanel Height="63"  Margin="0,18,0,0">
-                            <hc:Row  HorizontalAlignment="Center" Width="400" Height="16" RenderTransformOrigin="0.5,0.5"  Margin="0">
+               
+                    <hc:Card x:Name="myCard" BorderThickness="0" Effect="{DynamicResource EffectShadow2}" Margin="16,10,0,0"  Background="#475164"  HorizontalAlignment="Left" Opacity="0.5">
 
-                                <hc:Col Span="3" >
-                                    <TextBlock Margin="10,0,0,0">+25 *C</TextBlock>
-                                </hc:Col>
-                                <hc:Col Span="12" >
-                                    <Image Source="{StaticResource yun}" Width="16" Height="38" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-                                </hc:Col>
-                            </hc:Row>
-                            <hc:Row Height="28" Margin="0">
-                                <hc:Col>
-                                    <TextBlock FontSize="11" HorizontalAlignment="Left" TextWrapping="Wrap" Width="150" Margin="10,0,0,0"><Run Text="outdoor temperature Fuzzy cloudy weather"/></TextBlock>
-                                </hc:Col>
-                            </hc:Row>
-                        </StackPanel>
-                    </hc:Card.Footer>
-                </hc:Card>
+                        <hc:Card.Header>
+                            <TextBlock Text="Hi Lisa!" FontSize="16" FontWeight="Bold" Margin="10,0,0,0"/>
+                        </hc:Card.Header>
+                        <!--Card 的内容部分-->
+                        <Border CornerRadius="4,4,0,0" Width="160" Height="50">
+                            <TextBlock TextWrapping="Wrap" VerticalAlignment="Center" HorizontalAlignment="Left" 
+                                   Text="Welcome Home! The air quality is good . Fresh you can go out today" Margin="-112,0,0,0" Width="285"/>
+                        </Border>
+                        <!--Card 的尾部部分-->
+                        <hc:Card.Footer  >
+                            <StackPanel Height="63"  Margin="0,18,0,0">
+                                <hc:Row  HorizontalAlignment="Center" Width="400" Height="16" RenderTransformOrigin="0.5,0.5"  Margin="0">
+
+                                    <hc:Col Span="3" >
+                                        <TextBlock Margin="10,0,0,0">+25 *C</TextBlock>
+                                    </hc:Col>
+                                    <hc:Col Span="12" >
+                                        <Image Source="{StaticResource yun}" Width="16" Height="38" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                                    </hc:Col>
+                                </hc:Row>
+                                <hc:Row Height="28" Margin="0">
+                                    <hc:Col>
+                                        <TextBlock FontSize="11" HorizontalAlignment="Left" TextWrapping="Wrap" Width="150" Margin="10,0,0,0"><Run Text="outdoor temperature Fuzzy cloudy weather"/></TextBlock>
+                                    </hc:Col>
+                                </hc:Row>
+                            </StackPanel>
+                        </hc:Card.Footer>
+                    </hc:Card>
+             
             </StackPanel>
+            </Viewbox>
             <Grid Grid.Row="2">
                 <lvc:CartesianChart
                 Series="{Binding Series}"
