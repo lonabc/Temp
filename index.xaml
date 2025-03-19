@@ -26,6 +26,8 @@
 
         <BitmapImage x:Key="sun" UriSource="pack://application:,,,/Recesource/images/sun.png"/>
         <BitmapImage x:Key="TempRed" UriSource="pack://application:,,,/Recesource/images/TempRed.png"/>
+    
+       
 
     </Window.Resources>
     <Grid ShowGridLines="True" Background="#BEE1E6" >
@@ -37,7 +39,7 @@
         <Grid ShowGridLines="True">
             <Grid.RowDefinitions >
                 <RowDefinition Height="3*" />
-                <RowDefinition Height="20"/>
+                <RowDefinition Height="30"/>
                 <RowDefinition Height="2*" />
                 <RowDefinition Height="2*" />
                 <RowDefinition Height="Auto" />
@@ -80,10 +82,21 @@
             </StackPanel>
             </Viewbox>
             <Grid Grid.Row="1">
-                <TextBlock Text="Scarlett's Home" FontSize="16"/>
-                <Image HorizontalAlignment="Center" Source="{StaticResource TempRed}" Height="18" Margin="188,0,0,0"/>
-                <TextBlock Margin="0,0,160,0" HorizontalAlignment="Right" FontSize="15"  Text="{Binding tempView, UpdateSourceTrigger=PropertyChanged}" Foreground="#FF5400"/> 
                 
+                <TextBlock Text="Scarlett's Home" FontWeight="Bold" FontSize="16" VerticalAlignment="Center" />
+                <Image HorizontalAlignment="Center" Source="{StaticResource TempRed}"  Height="18" Margin="188,0,0,0"/>
+                <TextBlock Margin="0,0,160,0" HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="15"  Text="{Binding tempView, UpdateSourceTrigger=PropertyChanged}" Foreground="#FF5400"/>
+                <!-- 基础SplitButton -->
+
+                <hc:SplitButton  Content="基础示例" HorizontalAlignment="Right" Margin="0,0,10,0"  MaxDropDownHeight="120"  Width="120"  Command="{Binding MyCommand}" CommandParameter="Hello">
+                        <hc:SplitButton.DropDownContent>
+                            <StackPanel>
+                                <MenuItem Header="菜单项1" Width="120" Command="{Binding  Option1Command1}" CommandParameter="Hello"/>
+                                <MenuItem Header="菜单项2" Width="120" Command="{Binding Option1Command}" CommandParameter="word"/>
+                            </StackPanel>
+                        </hc:SplitButton.DropDownContent>
+                    </hc:SplitButton>
+           
             </Grid>
             <Grid Grid.Row="2">
 
@@ -166,7 +179,13 @@ VerticalAlignment="Stretch" BorderThickness="0" Effect="{DynamicResource EffectS
                 </Grid>
             </Grid>
             <Grid Grid.Row="3">
-               
+                <lvc:PieChart
+            Series="{Binding SeriesYuan}"
+            InitialRotation="-90"
+            MaxAngle="350"
+            MinValue="0"
+            MaxValue="100">
+                </lvc:PieChart>
             </Grid>
 
         </Grid>
