@@ -26,11 +26,12 @@
 
         <BitmapImage x:Key="sun" UriSource="pack://application:,,,/Recesource/images/sun.png"/>
         <BitmapImage x:Key="TempRed" UriSource="pack://application:,,,/Recesource/images/TempRed.png"/>
-    
+         
+        
        
 
     </Window.Resources>
-    <Grid ShowGridLines="True" Background="#BEE1E6" >
+    <Grid ShowGridLines="True" Background="#22223B" >
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="3*"/>
             <ColumnDefinition Width="2*"/>
@@ -48,15 +49,32 @@
                 <StackPanel Grid.Row="0">
                 <hc:SearchBar Grid.Column="0" Grid.Row="0" Command="{Binding SearchCmd}" Height="19" VerticalAlignment="Top" Margin="15,8,10,0" CommandParameter="{Binding Text,RelativeSource={RelativeSource Self}}"/>
 
-                    <hc:Card x:Name="myCard" BorderThickness="0" Effect="{DynamicResource EffectShadow2}" Margin="16,10,0,0"  Background="#D8E2DC"  HorizontalAlignment="Left" Opacity="0.5">
+                    <hc:Card x:Name="myCard" BorderThickness="0" Effect="{DynamicResource EffectShadow2}" Margin="16,10,10,"    HorizontalAlignment="Left" Opacity="0.5">
+                        <hc:Card.Background>
+                            <DrawingBrush>
+                                <DrawingBrush.Drawing>
+                                    <DrawingGroup>
+                                        <!-- 设置背景颜色 -->
+                                        <GeometryDrawing Brush="#336699">
+                                            <GeometryDrawing.Geometry>
+                                                <RectangleGeometry Rect="0,0,1,1"/>
+                                            </GeometryDrawing.Geometry>
+                                        </GeometryDrawing>
+
+                                        <!-- 设置背景图片 -->
+                                        <ImageDrawing ImageSource="/Recesource/images/Analytic.png" Rect="0.5,0,0.5,1"/>
+                                    </DrawingGroup>
+                                </DrawingBrush.Drawing>
+                            </DrawingBrush>
+                        </hc:Card.Background>
 
                         <hc:Card.Header>
-                            <TextBlock Text="Hi Lisa!" FontSize="16" FontWeight="Bold" Margin="10,0,0,0" Foreground="#10002B"/>
+                            <TextBlock Text="Hi Lisa!" FontSize="16" FontWeight="Bold" Margin="10,0,0,0" Foreground="#EDF6F9"/>
                         </hc:Card.Header>
                         <!--Card 的内容部分-->
                         <Border CornerRadius="4,4,0,0" Width="160" Height="50">
-                            <TextBlock TextWrapping="Wrap" VerticalAlignment="Center" HorizontalAlignment="Left"  Foreground="#10002B"
-                                   Text="Welcome Home! The air quality is good . Fresh you can go out today" Margin="-112,0,0,0" Width="285"/>
+                            <TextBlock TextWrapping="Wrap" VerticalAlignment="Center"  HorizontalAlignment="Left"  Foreground="#EDF6F9"
+                                   Text="Welcome Home! The air quality is good . Fresh you can go out today" Margin="-112,0,0,0" Width="250"/>
                         </Border>
                         <!--Card 的尾部部分-->
                         <hc:Card.Footer  >
@@ -72,7 +90,7 @@
                                 </hc:Row>
                                 <hc:Row Height="28" Margin="0">
                                     <hc:Col>
-                                        <TextBlock FontSize="11"  Foreground="#10002B" HorizontalAlignment="Left" TextWrapping="Wrap" Width="150" Margin="10,0,0,0"><Run Text="outdoor temperature Fuzzy cloudy weather"/></TextBlock>
+                                        <TextBlock FontSize="11"  Foreground="#EDF6F9" HorizontalAlignment="Left" TextWrapping="Wrap" Width="150" Margin="10,0,0,0"><Run Text="outdoor temperature Fuzzy cloudy weather"/></TextBlock>
                                     </hc:Col>
                                 </hc:Row>
                             </StackPanel>
