@@ -53,6 +53,18 @@ namespace WpfAppLogin
             myCard.Width = newWidth;
             myCard.Height = newHeight;
         }
+
+        private void ChangFont(object sender, RoutedEventArgs e)
+        {
+            string result = ONorOFF.Text;
+            if (result.Equals("ON"))
+            {
+                ONorOFF.Text = "OFF";
+            }else
+            {
+                ONorOFF.Text = "ON";
+            }
+        }
     }
 }
 
