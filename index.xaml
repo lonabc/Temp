@@ -16,7 +16,7 @@
         <Style TargetType="ToggleButton" x:Key="rightToggleButton"  BasedOn="{StaticResource ToggleButtonSwitch}">
             <Setter Property="HorizontalAlignment" Value="Right"/>
             <Setter Property="Margin" Value="5"/>
-            
+
         </Style>
         <BitmapImage x:Key="yun" UriSource="pack://application:,,,/Recesource/images/yun.png" />
 
@@ -26,18 +26,18 @@
 
         <BitmapImage x:Key="sun" UriSource="pack://application:,,,/Recesource/images/sun.png"/>
         <BitmapImage x:Key="TempRed" UriSource="pack://application:,,,/Recesource/images/TempRed.png"/>
-         
-        
-       
+
+
+
 
     </Window.Resources>
-    <Grid ShowGridLines="True" Background="#22223B" >
+    <Grid Background="#22223B" >
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="3*"/>
             <ColumnDefinition Width="2*"/>
             <ColumnDefinition Width="Auto" />
         </Grid.ColumnDefinitions>
-        <Grid ShowGridLines="True">
+        <Grid >
             <Grid.RowDefinitions >
                 <RowDefinition Height="3*" />
                 <RowDefinition Height="30"/>
@@ -47,9 +47,9 @@
             </Grid.RowDefinitions>
             <Viewbox Stretch="Fill" Margin="0,0,5,5">
                 <StackPanel Grid.Row="0">
-                <hc:SearchBar Grid.Column="0" Grid.Row="0" Command="{Binding SearchCmd}" Height="19" VerticalAlignment="Top" Margin="15,8,10,0" CommandParameter="{Binding Text,RelativeSource={RelativeSource Self}}"/>
+                    <hc:SearchBar Grid.Column="0" Grid.Row="0" Command="{Binding SearchCmd}" Height="19" VerticalAlignment="Top" Margin="15,8,10,0" CommandParameter="{Binding Text,RelativeSource={RelativeSource Self}}"/>
 
-                    <hc:Card x:Name="myCard" BorderThickness="0" Effect="{DynamicResource EffectShadow2}" Margin="16,10,10,"    HorizontalAlignment="Left" Opacity="0.5">
+                    <hc:Card x:Name="myCard" BorderThickness="0" Effect="{DynamicResource EffectShadow2}" Margin="16,10,10,0"    HorizontalAlignment="Left" Opacity="0.5">
                         <hc:Card.Background>
                             <DrawingBrush>
                                 <DrawingBrush.Drawing>
@@ -96,25 +96,28 @@
                             </StackPanel>
                         </hc:Card.Footer>
                     </hc:Card>
-             
-            </StackPanel>
+
+                </StackPanel>
             </Viewbox>
             <Grid Grid.Row="1">
-                
-                <TextBlock Text="Scarlett's Home" FontWeight="Bold" FontSize="16" VerticalAlignment="Center" />
+
+                <TextBlock Text="Scarlett's Home" FontWeight="Bold" FontSize="16" VerticalAlignment="Center"   Foreground="#FFFF" Margin="10,0,0,0"/>
                 <Image HorizontalAlignment="Center" Source="{StaticResource TempRed}"  Height="18" Margin="188,0,0,0"/>
                 <TextBlock Margin="0,0,160,0" HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="15"  Text="{Binding tempView, UpdateSourceTrigger=PropertyChanged}" Foreground="#FF5400"/>
                 <!-- 基础SplitButton -->
 
-                <hc:SplitButton  Content="基础示例" HorizontalAlignment="Right" Margin="0,0,10,0"  MaxDropDownHeight="120"  Width="120"  Command="{Binding MyCommand}" CommandParameter="Hello">
-                        <hc:SplitButton.DropDownContent>
-                            <StackPanel>
-                                <MenuItem Header="菜单项1" Width="120" Command="{Binding  Option1Command1}" CommandParameter="Hello"/>
-                                <MenuItem Header="菜单项2" Width="120" Command="{Binding Option1Command}" CommandParameter="word"/>
-                            </StackPanel>
-                        </hc:SplitButton.DropDownContent>
-                    </hc:SplitButton>
-           
+                <hc:SplitButton Background="#003A61" HorizontalAlignment="Right" Margin="0,0,10,0"  MaxDropDownHeight="120"  Width="120"  Command="{Binding MyCommand}" CommandParameter="Hello">
+                    <hc:SplitButton.Content>
+                        <TextBlock Text="室内检测" Foreground="#CAFFBF"/>
+                    </hc:SplitButton.Content>
+                    <hc:SplitButton.DropDownContent >
+                        <StackPanel >
+                            <MenuItem Header="菜单项1" Width="120" Command="{Binding  Option1Command1}"  CommandParameter="Hello"/>
+                            <MenuItem Header="菜单项2" Width="120" Command="{Binding Option1Command}"  CommandParameter="word"/>
+                        </StackPanel>
+                    </hc:SplitButton.DropDownContent>
+                </hc:SplitButton>
+
             </Grid>
             <Grid Grid.Row="2">
 
@@ -126,7 +129,7 @@
 
 
                 <hc:Card  HorizontalAlignment="Stretch"
-         VerticalAlignment="Stretch" BorderThickness="0" Effect="{DynamicResource EffectShadow2}" Margin="8" Background="#D8E2DC">
+         VerticalAlignment="Stretch" BorderThickness="0" Effect="{DynamicResource EffectShadow2}" Margin="8" Background="#FF7B00">
                     <Grid>
                         <Grid.RowDefinitions>
                             <!-- 第一行：开关按钮 -->
@@ -140,7 +143,7 @@
                         <Border CornerRadius="4,4,0,0"  Height="Auto"  Grid.Row="1">
                             <Image Source="{StaticResource Temp}" Width="50" HorizontalAlignment="Left" Margin="8"/>
                         </Border>
-                      
+
                     </Grid>
                     <hc:Card.Footer>
                         <TextBlock Foreground="#FFFFFF" Height="36" FontSize="15" TextWrapping="Wrap">Temperature detection</TextBlock>
@@ -148,7 +151,7 @@
                 </hc:Card>
                 <Grid Grid.Column="1">
                     <hc:Card  HorizontalAlignment="Stretch"
-VerticalAlignment="Stretch" BorderThickness="0" Effect="{DynamicResource EffectShadow2}" Margin="8" Background="#D8E2DC">
+VerticalAlignment="Stretch" BorderThickness="0" Effect="{DynamicResource EffectShadow2}" Margin="8" Background="#3A86FF">
                         <Grid>
                             <Grid.RowDefinitions>
                                 <!-- 第一行：开关按钮 -->
@@ -174,7 +177,7 @@ VerticalAlignment="Stretch" BorderThickness="0" Effect="{DynamicResource EffectS
                 </Grid>
                 <Grid Grid.Column="2">
                     <hc:Card  HorizontalAlignment="Stretch"
-VerticalAlignment="Stretch" BorderThickness="0" Effect="{DynamicResource EffectShadow2}" Margin="8" Background="#D8E2DC">
+VerticalAlignment="Stretch" BorderThickness="0" Effect="{DynamicResource EffectShadow2}" Margin="8" Background="#FFD500">
                         <Grid>
                             <Grid.RowDefinitions>
                                 <!-- 第一行：开关按钮 -->
@@ -197,13 +200,20 @@ VerticalAlignment="Stretch" BorderThickness="0" Effect="{DynamicResource EffectS
                 </Grid>
             </Grid>
             <Grid Grid.Row="3">
+                <Canvas>
+                    <Border Style="{StaticResource BorderRegion}" Background="#DF2935" Width="100" Height="5" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="8,8,0,0" CornerRadius="2"/>
+                    <TextBlock Text="温度" Foreground="#F27059" Canvas.Left="120"></TextBlock>
+                    <Border Style="{StaticResource BorderRegion}" Background="#1565C0" Width="100" Height="5" VerticalAlignment="Top" Canvas.Top="20" HorizontalAlignment="Left" Margin="8,8,0,0" CornerRadius="2"/>
+                    <TextBlock Text="湿度" Foreground="#42A5F5" Canvas.Left="120"  Canvas.Top="20"></TextBlock>
+                </Canvas>
                 <lvc:PieChart
-            Series="{Binding SeriesYuan}"
-            InitialRotation="-90"
-            MaxAngle="350"
-            MinValue="0"
-            MaxValue="100">
+                    Series="{Binding SeriesYuan}"
+                    InitialRotation="-90"
+                    MaxAngle="350"
+                    MinValue="0"
+                    MaxValue="100">
                 </lvc:PieChart>
+               
             </Grid>
 
         </Grid>
