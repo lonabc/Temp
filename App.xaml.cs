@@ -9,6 +9,7 @@ using System.Runtime.Caching;
 using System.Windows;
 using System.Windows.Controls;
 using WpfAppLogin.Model;
+using WpfAppLogin.VM;
 
 
 namespace WpfAppLogin;
@@ -56,9 +57,10 @@ public partial class App :Application
                 new MediaTypeWithQualityHeaderValue("application/json"));
         });
 
-        services.AddMemoryCache(); // 注册内存缓存服务
+        services.AddMemoryCache(); // Register memory cache service
 
         services.AddScoped<LoginModel>();
+        services.AddScoped<LoginVm>(); // Registe
     }
 }
 

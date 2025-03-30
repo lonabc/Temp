@@ -3,6 +3,18 @@
   "WorkspaceRootPath": "C:\\Users\\34015\\Desktop\\Temp\\TempWeb\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{35A7B851-ECDC-4FA4-9B0F-0DFA9FA9AC93}|WpfAppLogin.csproj|c:\\users\\34015\\desktop\\temp\\tempweb\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{35A7B851-ECDC-4FA4-9B0F-0DFA9FA9AC93}|WpfAppLogin.csproj|solutionrelative:app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{35A7B851-ECDC-4FA4-9B0F-0DFA9FA9AC93}|WpfAppLogin.csproj|c:\\users\\34015\\desktop\\temp\\tempweb\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{35A7B851-ECDC-4FA4-9B0F-0DFA9FA9AC93}|WpfAppLogin.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{35A7B851-ECDC-4FA4-9B0F-0DFA9FA9AC93}|WpfAppLogin.csproj|c:\\users\\34015\\desktop\\temp\\tempweb\\navigation\\windownavigationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{35A7B851-ECDC-4FA4-9B0F-0DFA9FA9AC93}|WpfAppLogin.csproj|solutionrelative:navigation\\windownavigationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{35A7B851-ECDC-4FA4-9B0F-0DFA9FA9AC93}|WpfAppLogin.csproj|c:\\users\\34015\\desktop\\temp\\tempweb\\vm\\socketwpf.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{35A7B851-ECDC-4FA4-9B0F-0DFA9FA9AC93}|WpfAppLogin.csproj|solutionrelative:vm\\socketwpf.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -47,14 +59,6 @@
       "RelativeMoniker": "D:0:0:{35A7B851-ECDC-4FA4-9B0F-0DFA9FA9AC93}|WpfAppLogin.csproj|solutionrelative:assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{35A7B851-ECDC-4FA4-9B0F-0DFA9FA9AC93}|WpfAppLogin.csproj|c:\\users\\34015\\desktop\\temp\\tempweb\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{35A7B851-ECDC-4FA4-9B0F-0DFA9FA9AC93}|WpfAppLogin.csproj|solutionrelative:app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{35A7B851-ECDC-4FA4-9B0F-0DFA9FA9AC93}|WpfAppLogin.csproj|c:\\users\\34015\\desktop\\temp\\tempweb\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{35A7B851-ECDC-4FA4-9B0F-0DFA9FA9AC93}|WpfAppLogin.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{35A7B851-ECDC-4FA4-9B0F-0DFA9FA9AC93}|WpfAppLogin.csproj|c:\\users\\34015\\desktop\\temp\\tempweb\\wpfapplogin.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
       "RelativeMoniker": "D:0:0:{35A7B851-ECDC-4FA4-9B0F-0DFA9FA9AC93}|WpfAppLogin.csproj|solutionrelative:wpfapplogin.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
     },
@@ -72,75 +76,50 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
+              "Title": "WindowNavigationService.cs",
+              "DocumentMoniker": "C:\\Users\\34015\\Desktop\\Temp\\TempWeb\\Navigation\\WindowNavigationService.cs",
+              "RelativeDocumentMoniker": "Navigation\\WindowNavigationService.cs",
+              "ToolTip": "C:\\Users\\34015\\Desktop\\Temp\\TempWeb\\Navigation\\WindowNavigationService.cs",
+              "RelativeToolTip": "Navigation\\WindowNavigationService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-30T05:06:19.286Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "SocketWpf.cs",
               "DocumentMoniker": "C:\\Users\\34015\\Desktop\\Temp\\TempWeb\\VM\\SocketWpf.cs",
               "RelativeDocumentMoniker": "VM\\SocketWpf.cs",
-              "ToolTip": "C:\\Users\\34015\\Desktop\\Temp\\TempWeb\\VM\\SocketWpf.cs*",
-              "RelativeToolTip": "VM\\SocketWpf.cs*",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAA8AAAAlAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\34015\\Desktop\\Temp\\TempWeb\\VM\\SocketWpf.cs",
+              "RelativeToolTip": "VM\\SocketWpf.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABIAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-16T11:48:33.783Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ViewModelMove.cs",
-              "DocumentMoniker": "C:\\Users\\34015\\Desktop\\Temp\\TempWeb\\Model\\ViewModelMove.cs",
-              "RelativeDocumentMoniker": "Model\\ViewModelMove.cs",
-              "ToolTip": "C:\\Users\\34015\\Desktop\\Temp\\TempWeb\\Model\\ViewModelMove.cs",
-              "RelativeToolTip": "Model\\ViewModelMove.cs",
-              "ViewState": "AgIAAD8AAAAAAAAAAAAAADoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-16T04:15:11.528Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\34015\\Desktop\\Temp\\TempWeb\\Model\\ViewModel.cs",
-              "RelativeDocumentMoniker": "Model\\ViewModel.cs",
-              "ToolTip": "C:\\Users\\34015\\Desktop\\Temp\\TempWeb\\Model\\ViewModel.cs",
-              "RelativeToolTip": "Model\\ViewModel.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAAACMAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-16T04:08:36.601Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "RelayCommond.cs",
-              "DocumentMoniker": "C:\\Users\\34015\\Desktop\\Temp\\TempWeb\\RelayCommond\\RelayCommond.cs",
-              "RelativeDocumentMoniker": "RelayCommond\\RelayCommond.cs",
-              "ToolTip": "C:\\Users\\34015\\Desktop\\Temp\\TempWeb\\RelayCommond\\RelayCommond.cs",
-              "RelativeToolTip": "RelayCommond\\RelayCommond.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAADkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-02T11:29:36.926Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 0,
               "Title": "App.xaml.cs",
               "DocumentMoniker": "C:\\Users\\34015\\Desktop\\Temp\\TempWeb\\App.xaml.cs",
               "RelativeDocumentMoniker": "App.xaml.cs",
               "ToolTip": "C:\\Users\\34015\\Desktop\\Temp\\TempWeb\\App.xaml.cs",
               "RelativeToolTip": "App.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAADwvwoAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAABIAAAAAAAAAAAAUwCAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-02T05:26:17.155Z"
+              "WhenOpened": "2025-03-02T05:26:17.155Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "LoginVm.cs",
               "DocumentMoniker": "C:\\Users\\34015\\Desktop\\Temp\\TempWeb\\VM\\LoginVm.cs",
               "RelativeDocumentMoniker": "VM\\LoginVm.cs",
@@ -148,12 +127,11 @@
               "RelativeToolTip": "VM\\LoginVm.cs",
               "ViewState": "AgIAADMAAAAAAAAAAAAowCAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-02T04:58:27.204Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-02T04:58:27.204Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 13,
               "Title": "AssemblyInfo.cs",
               "DocumentMoniker": "C:\\Users\\34015\\Desktop\\Temp\\TempWeb\\AssemblyInfo.cs",
               "RelativeDocumentMoniker": "AssemblyInfo.cs",
@@ -165,7 +143,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 10,
               "Title": "LoginModel.cs",
               "DocumentMoniker": "C:\\Users\\34015\\Desktop\\Temp\\TempWeb\\Model\\LoginModel.cs",
               "RelativeDocumentMoniker": "Model\\LoginModel.cs",
@@ -173,12 +151,11 @@
               "RelativeToolTip": "Model\\LoginModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-02T04:54:12.236Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-02T04:54:12.236Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "index.xaml.cs",
               "DocumentMoniker": "C:\\Users\\34015\\Desktop\\Temp\\TempWeb\\index.xaml.cs",
               "RelativeDocumentMoniker": "index.xaml.cs",
@@ -186,24 +163,71 @@
               "RelativeToolTip": "index.xaml.cs",
               "ViewState": "AgIAAAwAAAAAAAAAAAAIwB8AAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-01T08:47:04.437Z",
+              "WhenOpened": "2025-03-01T08:47:04.437Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\34015\\Desktop\\Temp\\TempWeb\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\34015\\Desktop\\Temp\\TempWeb\\MainWindow.xaml.cs",
+              "RelativeToolTip": "MainWindow.xaml.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAYwCUAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-01T06:00:30.605Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 9,
+              "Title": "RelayCommond.cs",
+              "DocumentMoniker": "C:\\Users\\34015\\Desktop\\Temp\\TempWeb\\RelayCommond\\RelayCommond.cs",
+              "RelativeDocumentMoniker": "RelayCommond\\RelayCommond.cs",
+              "ToolTip": "C:\\Users\\34015\\Desktop\\Temp\\TempWeb\\RelayCommond\\RelayCommond.cs",
+              "RelativeToolTip": "RelayCommond\\RelayCommond.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAADkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-02T11:29:36.926Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\34015\\Desktop\\Temp\\TempWeb\\Model\\ViewModel.cs",
+              "RelativeDocumentMoniker": "Model\\ViewModel.cs",
+              "ToolTip": "C:\\Users\\34015\\Desktop\\Temp\\TempWeb\\Model\\ViewModel.cs",
+              "RelativeToolTip": "Model\\ViewModel.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAACMAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-16T04:08:36.601Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ViewModelMove.cs",
+              "DocumentMoniker": "C:\\Users\\34015\\Desktop\\Temp\\TempWeb\\Model\\ViewModelMove.cs",
+              "RelativeDocumentMoniker": "Model\\ViewModelMove.cs",
+              "ToolTip": "C:\\Users\\34015\\Desktop\\Temp\\TempWeb\\Model\\ViewModelMove.cs",
+              "RelativeToolTip": "Model\\ViewModelMove.cs",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAAADoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-16T04:15:11.528Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "index.xaml",
               "DocumentMoniker": "C:\\Users\\34015\\Desktop\\Temp\\TempWeb\\index.xaml",
               "RelativeDocumentMoniker": "index.xaml",
               "ToolTip": "C:\\Users\\34015\\Desktop\\Temp\\TempWeb\\index.xaml",
               "RelativeToolTip": "index.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-03-01T08:44:58.696Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-01T08:44:58.696Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "Microsoft.Common.CurrentVersion.targets",
               "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
@@ -215,19 +239,18 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 12,
               "Title": "App.xaml",
               "DocumentMoniker": "C:\\Users\\34015\\Desktop\\Temp\\TempWeb\\App.xaml",
               "RelativeDocumentMoniker": "App.xaml",
               "ToolTip": "C:\\Users\\34015\\Desktop\\Temp\\TempWeb\\App.xaml",
               "RelativeToolTip": "App.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-03-02T13:13:18.418Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-02T13:13:18.418Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "XamlReader.cs",
               "DocumentMoniker": "C:\\Users\\24822\\AppData\\Local\\Temp\\.vsdbgsrc\\811f0c1102ba7a3d32ee827d0bb52f1af2ec958c7f3fb7abe7c05f601195e6c8\\XamlReader.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\24822\\AppData\\Local\\Temp\\.vsdbgsrc\\811f0c1102ba7a3d32ee827d0bb52f1af2ec958c7f3fb7abe7c05f601195e6c8\\XamlReader.cs",
@@ -239,19 +262,18 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "WpfAppLogin",
               "DocumentMoniker": "C:\\Users\\34015\\Desktop\\Temp\\TempWeb\\WpfAppLogin.csproj",
               "RelativeDocumentMoniker": "WpfAppLogin.csproj",
               "ToolTip": "C:\\Users\\34015\\Desktop\\Temp\\TempWeb\\WpfAppLogin.csproj",
               "RelativeToolTip": "WpfAppLogin.csproj",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-03-11T04:49:10.357Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-11T04:49:10.357Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 11,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "C:\\Users\\34015\\Desktop\\Temp\\TempWeb\\MainWindow.xaml",
               "RelativeDocumentMoniker": "MainWindow.xaml",
@@ -259,18 +281,6 @@
               "RelativeToolTip": "MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-03-01T06:16:24.784Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\34015\\Desktop\\Temp\\TempWeb\\MainWindow.xaml.cs",
-              "RelativeDocumentMoniker": "MainWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\34015\\Desktop\\Temp\\TempWeb\\MainWindow.xaml.cs",
-              "RelativeToolTip": "MainWindow.xaml.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAlwBsAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-01T06:00:30.605Z"
             }
           ]
         }

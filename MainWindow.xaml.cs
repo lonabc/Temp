@@ -5,7 +5,7 @@ using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
-using WpfAppLogin.View;
+using WpfAppLogin.Navigation;
 using WpfAppLogin.VM;
 
 namespace WpfAppLogin;
