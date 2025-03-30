@@ -4,11 +4,12 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfAppLogin"
+
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="500" Width="850">
     <Window.Resources>
         <Style x:Key="Text" TargetType="TextBlock">
-            <Setter Property="Margin" Value="5,2,2,2"/>
+            <Setter Property="Margin" Value="5,12,2,2"/>
         </Style>
     </Window.Resources>
     <Grid >
@@ -25,7 +26,7 @@
             <Grid.RowDefinitions>
                 <RowDefinition Height="2*"/>
                 <RowDefinition Height="5*"/>
-                <RowDefinition Height="8*"/>
+                <RowDefinition Height="5*"/>
             </Grid.RowDefinitions>
 
             <Border BorderBrush="Black" BorderThickness="2,2,2,0"   Grid.Row="0">
@@ -42,15 +43,13 @@
                     </Grid.ColumnDefinitions>
 
                     <StackPanel HorizontalAlignment="Right" Width="auto">
-                        <TextBlock Style="{StaticResource Text}" Text="用户名"/>
+                        <TextBlock Style="{StaticResource Text}" Margin="5,10,2,2" Text="用户名"/>
                         <TextBlock Style="{StaticResource Text}" Text="密码"/>
-                        
+
                     </StackPanel>
                     <StackPanel Grid.Column="1" HorizontalAlignment="Left" Width="150">
                         <TextBox x:Name="txtUserName" Text="{Binding name}" Width="150" Margin="0,2,0,2"/>
                         <TextBox x:Name="txtUserPassword" Text="{Binding password}" Width="150" Margin="0,2,0,2"/>
-                     
-                        
                     </StackPanel>
 
                 </Grid>
@@ -59,12 +58,11 @@
                 <Grid >
                     <StackPanel>
                         <CheckBox Content="记住密码" HorizontalAlignment="Left" Margin="61,10,0,0" VerticalAlignment="Top"/>
-                        <Button Command="{Binding LoginActoin}" x:Name="btnLogin" Content="登录" HorizontalAlignment="Left" Margin="61,10,0,0" VerticalAlignment="Top" Width="200"/>
+                        <Button Click="BtnLogin_Click" x:Name="btnLogin" Content="登录" HorizontalAlignment="Left" Margin="61,10,0,0" VerticalAlignment="Top" Width="200"/>
                     </StackPanel>
                 </Grid>
             </Border>
-          
         </Grid>
-        
+
     </Grid>
 </Window>

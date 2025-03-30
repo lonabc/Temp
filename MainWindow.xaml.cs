@@ -1,14 +1,11 @@
-﻿using System.ComponentModel;
+﻿using Microsoft.CSharp.RuntimeBinder;
+using System.ComponentModel;
+using System.Diagnostics;
+using System.Net.Http;
 using System.Text;
+using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
+using WpfAppLogin.View;
 using WpfAppLogin.VM;
 
 namespace WpfAppLogin;
@@ -19,20 +16,33 @@ namespace WpfAppLogin;
 public partial class MainWindow : Window
 {
     //ModelTest modelTest;
-    LoginVm loginVm;
-    public MainWindow()
+    private readonly LoginVm _loginVm;
+
+
+    public MainWindow(LoginVm loginVm)
     {
         InitializeComponent();
-         loginVm = new LoginVm();
-         this.DataContext =loginVm; 
+        _loginVm = loginVm;
+        DataContext = _loginVm;
+       
     }
     
 
-    private void BtnLogin_Click(object sender, RoutedEventArgs e)
+    private async void  BtnLogin_Click(object sender, RoutedEventArgs e)
     {
-        
-       loginVm.login();
-        MessageBox.Show("Login Success"+loginVm.name+loginVm.password);
+       
+         string code=await _loginVm.login();
+        if (code.Equals("200"))
+        {
+            WindowNavigationService.NavigateTo<index>(this);
+        }
+        else
+        { 
+            MessageBox.Show("登入失败");
+        }
     }
+   
+
+
 }
 

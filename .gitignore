@@ -14,3 +14,7 @@ obj/
 /.vs
 *.bin
 *.bin
+/.vs/ProjectEvaluation
+/.vs/WpfAppLogin/DesignTimeBuild
+/obj
+/obj

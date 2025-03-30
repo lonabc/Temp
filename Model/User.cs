@@ -1,33 +1,30 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace WpfAppLogin.Model
 {
-    public class LoginModel
+    public class User
     {
-        private string _id;
         private string _name;
         private string _password;
-
-        public string name
-        {
+        private string _Id;
+        public string name {
             get { return _name; }
-            set { _name = value;  }
+            set { _name = value; }
         }
-        public string id
-        {
-            get { return _id; }
-            set { _id = value; }
-        }
-
         public string password
         {
             get { return _password; }
-            set { _password = value;  }
+            set { _password = password; }
+        }
+        public string Id
+        {
+            get { return _Id; }
+            set { _Id = Id; }
+
         }
     }
 }
