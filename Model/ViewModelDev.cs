@@ -15,16 +15,20 @@ using System.Runtime.CompilerServices;
 using LiveChartsCore.Defaults;
 using LiveChartsCore.Measure;
 using LiveChartsCore.SkiaSharpView.Extensions;
+using WpfAppLogin.Tools.ToolsContext;
+using System.Printing;
 
 namespace WpfAppLogin.Model
 {
 
-    public class ViewModelDev : INotifyPropertyChanged
+    public class ViewModelDev : INotifyPropertyChanged      //饼状图数据
     {
-        //饼状图数据
+  
         private ObservableValue _valueTemp; // 动态温度值
-        private ObservableValue _valueHumidity; // 动态湿度值
-        private ObservableValue _valueNoise; // 动态噪音值
+        private ObservableValue _valueAirQuility; // 动态湿度值
+        private ObservableValue _valueLight; // 动态噪音值
+
+        private MathToolsFactory _mathToolsFactory; // 数学工具工厂
 
         public ObservableCollection<ISeries> SeriesYuan { get; set; }
 
@@ -33,9 +37,18 @@ namespace WpfAppLogin.Model
         public ISeries[] Series { get; set; }
 
 
-        public static int valueTemp;
+        public static float valueTemp;
+        public static float[] sensorData;
 
-        private  string _tempView="25°C";
+        private  string _tempView="25°C"; //index.xaml中显示的温度值
+        private string _airView = "极低";//空气质量
+
+        public ViewModelDev(MathToolsFactory mathToolsFactory)
+        {
+            _mathToolsFactory = mathToolsFactory; // 数学工具工厂
+        }
+
+
         public string tempView
         {
             get { return _tempView; }
@@ -49,6 +62,19 @@ namespace WpfAppLogin.Model
             }
         }
 
+
+        public string airView
+        {
+            get { return _airView; }
+            set
+            {
+                if (_airView != value)
+                {
+                    _airView = value;
+                    RaisePropertyChanged(nameof(airView)); // 通知UI UserName 属性已更改
+                }
+            }
+        }
       
 
 
@@ -106,15 +132,15 @@ namespace WpfAppLogin.Model
 
             // 初始化饼状图动态值
             _valueTemp = new ObservableValue(50); // 初始温度值
-            _valueHumidity = new ObservableValue(50); // 初始湿度值
-            _valueNoise = new ObservableValue(95); // 初始噪音值
+            _valueAirQuility = new ObservableValue(50); // 初始湿度值
+            _valueLight = new ObservableValue(95); // 初始噪音值
 
-                                                   // 创建仪表盘
-            SeriesYuan = new ObservableCollection<ISeries>(
+                                                
+            SeriesYuan = new ObservableCollection<ISeries>( // 创建仪表盘
                 GaugeGenerator.BuildSolidGauge(
-                    new GaugeItem(_valueHumidity, series => SetStyle("Environmental Humidity", series)),
+                    new GaugeItem(_valueAirQuility, series => SetStyle("Environmental airQuility", series)),
                     new GaugeItem(_valueTemp, series => SetStyle("Environmental Temperature", series)),
-                    new GaugeItem(_valueNoise, series => SetStyle("Environmental Noise", series)),
+                    new GaugeItem(_valueLight, series => SetStyle("Environmental light", series)),
                     new GaugeItem(GaugeItem.Background, series =>
                     {
                         series.Fill = null;
@@ -164,13 +190,12 @@ namespace WpfAppLogin.Model
                 }
             };
 
-            // 初始化随机数生成器
-            _random = new Random();
+         
 
             // 设置定时器，实时更新
             _timer = new DispatcherTimer
             {
-                Interval = TimeSpan.FromSeconds(1) // 每秒更新一次
+                Interval = TimeSpan.FromSeconds(6) // 每6秒更新一次
             };
             _timer.Tick += (sender, e) => OnTimerTick(values, xLabels);
             _timer.Start();
@@ -181,29 +206,50 @@ namespace WpfAppLogin.Model
             // 添加新的横坐标标签（当前时间）
             string newX = DateTime.Now.ToString("HH:mm:ss"); // 当前时间
             xLabels.Add(newX);
-          
-             tempView = valueTemp.ToString()+ "°C";
-            _valueTemp.Value = valueTemp; // 温度值
-            // 添加新的数据点
-            double smallTmep = _random.Next(10, 500); // 随机生成一个值
-            smallTmep = smallTmep / 1000;
-           
-            double newValue = (double)valueTemp+smallTmep;
-            values.Add(newValue);
+            _valueTemp.Value =(int)(sensorData[0] * 100+0.5) / 100.0; // 设置饼状图温度值,保留两位小数
+            tempView = _valueTemp.Value + "°C"; // 更新显示的温度值
 
+            float airQuality = MathToolsFactory.CreateMathTools<float>("float").mathConversion((float)sensorData[2]);          
+          
+            
+            _valueAirQuility.Value = (int) airQuality; // 设置饼状图空气质量值,保留两位小数
+
+
+
+            _valueLight.Value = (int)(sensorData[1]* 100.0 / 3.3d ); // 设置饼状图光照强度值,保留两位小数
+
+            values.Add((double)_valueTemp.Value);
+            
             // 如果数据点太多，移除最旧的数据点
             if (xLabels.Count > 5)
             {
                 xLabels.RemoveAt(0);
+
                 values.RemoveAt(0);
+            }
+            if (YAxes[0].MaxLimit - _valueTemp.Value < 8)
+            {
+
+                UpdateYAxisLimits((double)YAxes[0].MinLimit + 8, (double)YAxes[0].MaxLimit + 8);
+            }
+            if (_valueAirQuility.Value > 50)
+            {
+                airView = "空气质量：重度污染";
+            }
+            else if (_valueAirQuility.Value > 30 && _valueAirQuility.Value < 50)
+            {
+                airView = "空气质量：中等";
+            }
+            else if (_valueAirQuility.Value > 15 && _valueAirQuility.Value < 35)
+            {
+                airView = "空气质量：轻度污染";
+            }
+            else {
+                airView = "空气质量：良好";
             }
         }
 
-
-
-
-
-        public static void SetStyle(string name, PieSeries<ObservableValue> series)
+        public static void SetStyle(string name, PieSeries<ObservableValue> series) //饼状图样式
         {
             series.Name = name;
             series.DataLabelsSize = 10;
@@ -213,6 +259,15 @@ namespace WpfAppLogin.Model
             series.InnerRadius = 20;
             series.MaxRadialColumnWidth = 5;
         }
+        public void UpdateYAxisLimits(double min, double max)
+        {
+            if (YAxes.Count > 0)
+            {
+                YAxes[0].MinLimit = min;
+                YAxes[0].MaxLimit = max;
+            }
+        }
+
 
     }
 }

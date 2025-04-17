@@ -14,6 +14,7 @@ using System.Windows;
 using System.Windows.Input;
 using WpfAppLogin.Model;
 
+
 using WpfAppLogin.RelayCommond;
 
 namespace WpfAppLogin.VM
@@ -61,17 +62,21 @@ namespace WpfAppLogin.VM
             try
             {
                 _loginModel.id = "1";
-                var json = JsonSerializer.Serialize(_loginModel);
-                var content = new StringContent(json, Encoding.UTF8, "application/json");
-                var fullUrl = new Uri(_httpClient.BaseAddress, "HomeController/Login/Login").AbsoluteUri;
-                Debug.WriteLine($"请求URL: {fullUrl}");
-                Debug.WriteLine($"请求内容: {json}");
 
-                var response = await _httpClient.PostAsync("HomeController/Login/Login", content);
+                 var json = JsonSerializer.Serialize(_loginModel); //将对象序列化为JSON字符串
+                var content = new StringContent(json, Encoding.UTF8, "application/json"); //规定请求体的格式为JSON，UTF8编码
+                var fullUrl = new Uri(_httpClient.BaseAddress, "/LoginTest").AbsoluteUri;
+
+
+                var response = await _httpClient.PostAsync("/LoginTest", content);
                 response.EnsureSuccessStatusCode();
                 var responseBody = await response.Content.ReadAsStringAsync();
+                string responseCode = responseBody.ToString();
+                if(responseCode.Contains("登入失败"))
+                    return "500";
+                MessageBox.Show(responseCode);
                 return "200";
-                //       MessageBox.Show(responseBody);
+                     
             }
             catch (HttpRequestException ex)
             {

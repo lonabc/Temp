@@ -9,6 +9,7 @@ using System.Runtime.Caching;
 using System.Windows;
 using System.Windows.Controls;
 using WpfAppLogin.Model;
+using WpfAppLogin.Tools.ToolsContext;
 using WpfAppLogin.VM;
 
 
@@ -48,11 +49,12 @@ public partial class App :Application
         // 注册窗口和页面
 
         services.AddTransient<MainWindow>();
+        services.AddTransient<index>();
 
         // 注册服务
         services.AddHttpClient("MyApi", client =>
         {
-            client.BaseAddress = new Uri("http://localhost:5278");
+            client.BaseAddress = new Uri("http://localhost:5091");
             client.DefaultRequestHeaders.Accept.Add(
                 new MediaTypeWithQualityHeaderValue("application/json"));
         });
@@ -61,6 +63,7 @@ public partial class App :Application
 
         services.AddScoped<LoginModel>();
         services.AddScoped<LoginVm>(); // Registe
+     
     }
 }
 
