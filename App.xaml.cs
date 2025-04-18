@@ -38,7 +38,7 @@ public partial class App :Application
 
 
         // 显示主窗口（通过 DI 解析）
-        var mainWindow = ServiceProvider.GetRequiredService<MainWindow>();
+        var mainWindow = ServiceProvider.GetRequiredService<HomePage>();
         mainWindow.Show();
 
     }
@@ -50,6 +50,7 @@ public partial class App :Application
 
         services.AddTransient<MainWindow>();
         services.AddTransient<index>();
+        services.AddTransient<HomePage>();
 
         // 注册服务
         services.AddHttpClient("MyApi", client =>

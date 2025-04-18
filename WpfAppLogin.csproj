@@ -24,6 +24,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="Recesource\images\backgroundHome.jpg" />
     <Resource Include="Recesource\images\analytic.png" />
     <Resource Include="Recesource\images\iceCold.png" />
     <Resource Include="Recesource\images\sun.png" />
