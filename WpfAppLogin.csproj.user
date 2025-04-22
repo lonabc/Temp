@@ -8,5 +8,8 @@
     <Compile Update="index.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="UserPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
 </Project>

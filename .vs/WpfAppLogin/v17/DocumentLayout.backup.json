@@ -3,60 +3,96 @@
   "WorkspaceRootPath": "C:\\Users\\34015\\Desktop\\Temp\\TempWeb\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{35A7B851-ECDC-4FA4-9B0F-0DFA9FA9AC93}|WpfAppLogin.csproj|c:\\users\\34015\\desktop\\temp\\tempweb\\homepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{35A7B851-ECDC-4FA4-9B0F-0DFA9FA9AC93}|WpfAppLogin.csproj|solutionrelative:homepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{35A7B851-ECDC-4FA4-9B0F-0DFA9FA9AC93}|WpfAppLogin.csproj|c:\\users\\34015\\desktop\\temp\\tempweb\\userpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{35A7B851-ECDC-4FA4-9B0F-0DFA9FA9AC93}|WpfAppLogin.csproj|solutionrelative:userpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{35A7B851-ECDC-4FA4-9B0F-0DFA9FA9AC93}|WpfAppLogin.csproj|c:\\users\\34015\\desktop\\temp\\tempweb\\model\\cardmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{35A7B851-ECDC-4FA4-9B0F-0DFA9FA9AC93}|WpfAppLogin.csproj|solutionrelative:model\\cardmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{35A7B851-ECDC-4FA4-9B0F-0DFA9FA9AC93}|WpfAppLogin.csproj|c:\\users\\34015\\desktop\\temp\\tempweb\\index.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{35A7B851-ECDC-4FA4-9B0F-0DFA9FA9AC93}|WpfAppLogin.csproj|solutionrelative:index.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{35A7B851-ECDC-4FA4-9B0F-0DFA9FA9AC93}|WpfAppLogin.csproj|c:\\users\\34015\\desktop\\temp\\tempweb\\homepage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{35A7B851-ECDC-4FA4-9B0F-0DFA9FA9AC93}|WpfAppLogin.csproj|solutionrelative:homepage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{35A7B851-ECDC-4FA4-9B0F-0DFA9FA9AC93}|WpfAppLogin.csproj|c:\\users\\34015\\desktop\\temp\\tempweb\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{35A7B851-ECDC-4FA4-9B0F-0DFA9FA9AC93}|WpfAppLogin.csproj|solutionrelative:app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{35A7B851-ECDC-4FA4-9B0F-0DFA9FA9AC93}|WpfAppLogin.csproj|c:\\users\\34015\\desktop\\temp\\tempweb\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{35A7B851-ECDC-4FA4-9B0F-0DFA9FA9AC93}|WpfAppLogin.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{35A7B851-ECDC-4FA4-9B0F-0DFA9FA9AC93}|WpfAppLogin.csproj|c:\\users\\34015\\desktop\\temp\\tempweb\\index.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{35A7B851-ECDC-4FA4-9B0F-0DFA9FA9AC93}|WpfAppLogin.csproj|solutionrelative:index.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{35A7B851-ECDC-4FA4-9B0F-0DFA9FA9AC93}|WpfAppLogin.csproj|c:\\users\\34015\\desktop\\temp\\tempweb\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{35A7B851-ECDC-4FA4-9B0F-0DFA9FA9AC93}|WpfAppLogin.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{35A7B851-ECDC-4FA4-9B0F-0DFA9FA9AC93}|WpfAppLogin.csproj|c:\\users\\34015\\desktop\\temp\\tempweb\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{35A7B851-ECDC-4FA4-9B0F-0DFA9FA9AC93}|WpfAppLogin.csproj|solutionrelative:app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{35A7B851-ECDC-4FA4-9B0F-0DFA9FA9AC93}|WpfAppLogin.csproj|c:\\users\\34015\\desktop\\temp\\tempweb\\wpfapplogin.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{35A7B851-ECDC-4FA4-9B0F-0DFA9FA9AC93}|WpfAppLogin.csproj|solutionrelative:wpfapplogin.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{35A7B851-ECDC-4FA4-9B0F-0DFA9FA9AC93}|WpfAppLogin.csproj|c:\\users\\34015\\desktop\\temp\\tempweb\\index.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{35A7B851-ECDC-4FA4-9B0F-0DFA9FA9AC93}|WpfAppLogin.csproj|solutionrelative:index.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{35A7B851-ECDC-4FA4-9B0F-0DFA9FA9AC93}|WpfAppLogin.csproj|c:\\users\\34015\\desktop\\temp\\tempweb\\model\\viewmodelmove.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{35A7B851-ECDC-4FA4-9B0F-0DFA9FA9AC93}|WpfAppLogin.csproj|solutionrelative:model\\viewmodelmove.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{35A7B851-ECDC-4FA4-9B0F-0DFA9FA9AC93}|WpfAppLogin.csproj|c:\\users\\34015\\desktop\\temp\\tempweb\\homepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{35A7B851-ECDC-4FA4-9B0F-0DFA9FA9AC93}|WpfAppLogin.csproj|solutionrelative:homepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{35A7B851-ECDC-4FA4-9B0F-0DFA9FA9AC93}|WpfAppLogin.csproj|c:\\users\\34015\\desktop\\temp\\tempweb\\homepage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{35A7B851-ECDC-4FA4-9B0F-0DFA9FA9AC93}|WpfAppLogin.csproj|solutionrelative:homepage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{35A7B851-ECDC-4FA4-9B0F-0DFA9FA9AC93}|WpfAppLogin.csproj|c:\\users\\34015\\desktop\\temp\\tempweb\\userpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{35A7B851-ECDC-4FA4-9B0F-0DFA9FA9AC93}|WpfAppLogin.csproj|solutionrelative:userpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{35A7B851-ECDC-4FA4-9B0F-0DFA9FA9AC93}|WpfAppLogin.csproj|c:\\users\\34015\\desktop\\temp\\tempweb\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{35A7B851-ECDC-4FA4-9B0F-0DFA9FA9AC93}|WpfAppLogin.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{35A7B851-ECDC-4FA4-9B0F-0DFA9FA9AC93}|WpfAppLogin.csproj|c:\\users\\34015\\desktop\\temp\\tempweb\\vm\\usermodelpagevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{35A7B851-ECDC-4FA4-9B0F-0DFA9FA9AC93}|WpfAppLogin.csproj|solutionrelative:vm\\usermodelpagevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{35A7B851-ECDC-4FA4-9B0F-0DFA9FA9AC93}|WpfAppLogin.csproj|c:\\users\\34015\\desktop\\temp\\tempweb\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{35A7B851-ECDC-4FA4-9B0F-0DFA9FA9AC93}|WpfAppLogin.csproj|solutionrelative:app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{35A7B851-ECDC-4FA4-9B0F-0DFA9FA9AC93}|WpfAppLogin.csproj|c:\\users\\34015\\desktop\\temp\\tempweb\\model\\userpagemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{35A7B851-ECDC-4FA4-9B0F-0DFA9FA9AC93}|WpfAppLogin.csproj|solutionrelative:model\\userpagemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{35A7B851-ECDC-4FA4-9B0F-0DFA9FA9AC93}|WpfAppLogin.csproj|c:\\users\\34015\\desktop\\temp\\tempweb\\vm\\loginvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{35A7B851-ECDC-4FA4-9B0F-0DFA9FA9AC93}|WpfAppLogin.csproj|solutionrelative:vm\\loginvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{35A7B851-ECDC-4FA4-9B0F-0DFA9FA9AC93}|WpfAppLogin.csproj|c:\\users\\34015\\desktop\\temp\\tempweb\\model\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{35A7B851-ECDC-4FA4-9B0F-0DFA9FA9AC93}|WpfAppLogin.csproj|solutionrelative:model\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{35A7B851-ECDC-4FA4-9B0F-0DFA9FA9AC93}|WpfAppLogin.csproj|c:\\users\\34015\\desktop\\temp\\tempweb\\model\\viewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{35A7B851-ECDC-4FA4-9B0F-0DFA9FA9AC93}|WpfAppLogin.csproj|solutionrelative:model\\viewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{35A7B851-ECDC-4FA4-9B0F-0DFA9FA9AC93}|WpfAppLogin.csproj|c:\\users\\34015\\desktop\\temp\\tempweb\\model\\loginmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{35A7B851-ECDC-4FA4-9B0F-0DFA9FA9AC93}|WpfAppLogin.csproj|solutionrelative:model\\loginmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{35A7B851-ECDC-4FA4-9B0F-0DFA9FA9AC93}|WpfAppLogin.csproj|c:\\users\\34015\\desktop\\temp\\tempweb\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{35A7B851-ECDC-4FA4-9B0F-0DFA9FA9AC93}|WpfAppLogin.csproj|solutionrelative:app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{35A7B851-ECDC-4FA4-9B0F-0DFA9FA9AC93}|WpfAppLogin.csproj|c:\\users\\34015\\desktop\\temp\\tempweb\\model\\viewmodeldev.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{35A7B851-ECDC-4FA4-9B0F-0DFA9FA9AC93}|WpfAppLogin.csproj|solutionrelative:model\\viewmodeldev.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{35A7B851-ECDC-4FA4-9B0F-0DFA9FA9AC93}|WpfAppLogin.csproj|c:\\users\\34015\\desktop\\temp\\tempweb\\wpfapplogin.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
-      "RelativeMoniker": "D:0:0:{35A7B851-ECDC-4FA4-9B0F-0DFA9FA9AC93}|WpfAppLogin.csproj|solutionrelative:wpfapplogin.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+      "AbsoluteMoniker": "D:0:0:{35A7B851-ECDC-4FA4-9B0F-0DFA9FA9AC93}|WpfAppLogin.csproj|c:\\users\\34015\\desktop\\temp\\tempweb\\model\\loginmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{35A7B851-ECDC-4FA4-9B0F-0DFA9FA9AC93}|WpfAppLogin.csproj|solutionrelative:model\\loginmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{35A7B851-ECDC-4FA4-9B0F-0DFA9FA9AC93}|WpfAppLogin.csproj|c:\\users\\34015\\desktop\\temp\\tempweb\\wpfapplogin.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{35A7B851-ECDC-4FA4-9B0F-0DFA9FA9AC93}|WpfAppLogin.csproj|solutionrelative:wpfapplogin.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{35A7B851-ECDC-4FA4-9B0F-0DFA9FA9AC93}|WpfAppLogin.csproj|c:\\users\\34015\\desktop\\temp\\tempweb\\model\\relaycommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{35A7B851-ECDC-4FA4-9B0F-0DFA9FA9AC93}|WpfAppLogin.csproj|solutionrelative:model\\relaycommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{35A7B851-ECDC-4FA4-9B0F-0DFA9FA9AC93}|WpfAppLogin.csproj|c:\\users\\34015\\desktop\\temp\\tempweb\\model\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{35A7B851-ECDC-4FA4-9B0F-0DFA9FA9AC93}|WpfAppLogin.csproj|solutionrelative:model\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{35A7B851-ECDC-4FA4-9B0F-0DFA9FA9AC93}|WpfAppLogin.csproj|c:\\users\\34015\\desktop\\temp\\tempweb\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{35A7B851-ECDC-4FA4-9B0F-0DFA9FA9AC93}|WpfAppLogin.csproj|solutionrelative:assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{35A7B851-ECDC-4FA4-9B0F-0DFA9FA9AC93}|WpfAppLogin.csproj|c:\\users\\34015\\desktop\\temp\\tempweb\\wpfapplogin.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{35A7B851-ECDC-4FA4-9B0F-0DFA9FA9AC93}|WpfAppLogin.csproj|solutionrelative:wpfapplogin.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{35A7B851-ECDC-4FA4-9B0F-0DFA9FA9AC93}|WpfAppLogin.csproj|c:\\users\\34015\\desktop\\temp\\tempweb\\tools\\mathchangetools.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -67,20 +103,8 @@
       "RelativeMoniker": "D:0:0:{35A7B851-ECDC-4FA4-9B0F-0DFA9FA9AC93}|WpfAppLogin.csproj|solutionrelative:tools\\toolscontext\\mathtoolsfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{35A7B851-ECDC-4FA4-9B0F-0DFA9FA9AC93}|WpfAppLogin.csproj|c:\\users\\34015\\desktop\\temp\\tempweb\\model\\viewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{35A7B851-ECDC-4FA4-9B0F-0DFA9FA9AC93}|WpfAppLogin.csproj|solutionrelative:model\\viewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{35A7B851-ECDC-4FA4-9B0F-0DFA9FA9AC93}|WpfAppLogin.csproj|c:\\users\\34015\\desktop\\temp\\tempweb\\vm\\socketwpf.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{35A7B851-ECDC-4FA4-9B0F-0DFA9FA9AC93}|WpfAppLogin.csproj|solutionrelative:vm\\socketwpf.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{35A7B851-ECDC-4FA4-9B0F-0DFA9FA9AC93}|WpfAppLogin.csproj|c:\\users\\34015\\desktop\\temp\\tempweb\\model\\viewmodelmove.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{35A7B851-ECDC-4FA4-9B0F-0DFA9FA9AC93}|WpfAppLogin.csproj|solutionrelative:model\\viewmodelmove.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{35A7B851-ECDC-4FA4-9B0F-0DFA9FA9AC93}|WpfAppLogin.csproj|c:\\users\\34015\\desktop\\temp\\tempweb\\model\\relaycommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{35A7B851-ECDC-4FA4-9B0F-0DFA9FA9AC93}|WpfAppLogin.csproj|solutionrelative:model\\relaycommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{35A7B851-ECDC-4FA4-9B0F-0DFA9FA9AC93}|WpfAppLogin.csproj|c:\\users\\34015\\desktop\\temp\\tempweb\\relaycommond\\relaycommond.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -91,17 +115,10 @@
       "RelativeMoniker": "D:0:0:{35A7B851-ECDC-4FA4-9B0F-0DFA9FA9AC93}|WpfAppLogin.csproj|solutionrelative:navigation\\apppage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{35A7B851-ECDC-4FA4-9B0F-0DFA9FA9AC93}|WpfAppLogin.csproj|c:\\users\\34015\\desktop\\temp\\tempweb\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{35A7B851-ECDC-4FA4-9B0F-0DFA9FA9AC93}|WpfAppLogin.csproj|solutionrelative:assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\34015\\Desktop\\\u9A71\u52A8\u5E93\\OLED\\16\u5F15\u811A\\OLED.h||{3B902123-F8A7-4915-9F01-361F908088D0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\24822\\AppData\\Local\\Temp\\.vsdbgsrc\\811f0c1102ba7a3d32ee827d0bb52f1af2ec958c7f3fb7abe7c05f601195e6c8\\XamlReader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     }
   ],
   "DocumentGroupContainers": [
@@ -111,11 +128,87 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CardModel.cs",
+              "DocumentMoniker": "C:\\Users\\34015\\Desktop\\Temp\\TempWeb\\Model\\CardModel.cs",
+              "RelativeDocumentMoniker": "Model\\CardModel.cs",
+              "ToolTip": "C:\\Users\\34015\\Desktop\\Temp\\TempWeb\\Model\\CardModel.cs",
+              "RelativeToolTip": "Model\\CardModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvxQAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-22T13:17:16.225Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "WpfAppLogin",
+              "DocumentMoniker": "C:\\Users\\34015\\Desktop\\Temp\\TempWeb\\WpfAppLogin.csproj",
+              "RelativeDocumentMoniker": "WpfAppLogin.csproj",
+              "ToolTip": "C:\\Users\\34015\\Desktop\\Temp\\TempWeb\\WpfAppLogin.csproj",
+              "RelativeToolTip": "WpfAppLogin.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-04-22T12:25:43.958Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "UserModelPageVm.cs",
+              "DocumentMoniker": "C:\\Users\\34015\\Desktop\\Temp\\TempWeb\\VM\\UserModelPageVm.cs",
+              "RelativeDocumentMoniker": "VM\\UserModelPageVm.cs",
+              "ToolTip": "C:\\Users\\34015\\Desktop\\Temp\\TempWeb\\VM\\UserModelPageVm.cs",
+              "RelativeToolTip": "VM\\UserModelPageVm.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-20T14:23:35.49Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "UserPageModel.cs",
+              "DocumentMoniker": "C:\\Users\\34015\\Desktop\\Temp\\TempWeb\\Model\\UserPageModel.cs",
+              "RelativeDocumentMoniker": "Model\\UserPageModel.cs",
+              "ToolTip": "C:\\Users\\34015\\Desktop\\Temp\\TempWeb\\Model\\UserPageModel.cs",
+              "RelativeToolTip": "Model\\UserPageModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwsAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-20T12:52:16.914Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "UserPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\34015\\Desktop\\Temp\\TempWeb\\UserPage.xaml.cs",
+              "RelativeDocumentMoniker": "UserPage.xaml.cs",
+              "ToolTip": "C:\\Users\\34015\\Desktop\\Temp\\TempWeb\\UserPage.xaml.cs",
+              "RelativeToolTip": "UserPage.xaml.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAqwCMAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-20T12:15:23.515Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "UserPage.xaml",
+              "DocumentMoniker": "C:\\Users\\34015\\Desktop\\Temp\\TempWeb\\UserPage.xaml",
+              "RelativeDocumentMoniker": "UserPage.xaml",
+              "ToolTip": "C:\\Users\\34015\\Desktop\\Temp\\TempWeb\\UserPage.xaml",
+              "RelativeToolTip": "UserPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-04-20T10:26:12.158Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "HomePage.xaml",
               "DocumentMoniker": "C:\\Users\\34015\\Desktop\\Temp\\TempWeb\\HomePage.xaml",
               "RelativeDocumentMoniker": "HomePage.xaml",
@@ -127,19 +220,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 8,
               "Title": "HomePage.xaml.cs",
               "DocumentMoniker": "C:\\Users\\34015\\Desktop\\Temp\\TempWeb\\HomePage.xaml.cs",
               "RelativeDocumentMoniker": "HomePage.xaml.cs",
               "ToolTip": "C:\\Users\\34015\\Desktop\\Temp\\TempWeb\\HomePage.xaml.cs",
               "RelativeToolTip": "HomePage.xaml.cs",
-              "ViewState": "AgIAAB4AAAAAAAAAAAD4vyoAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-18T05:03:49.622Z"
+              "WhenOpened": "2025-04-18T05:03:49.622Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 3,
               "Title": "index.xaml.cs",
               "DocumentMoniker": "C:\\Users\\34015\\Desktop\\Temp\\TempWeb\\index.xaml.cs",
               "RelativeDocumentMoniker": "index.xaml.cs",
@@ -147,23 +241,24 @@
               "RelativeToolTip": "index.xaml.cs",
               "ViewState": "AgIAAA8AAAAAAAAAAADwvz8AAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-16T11:04:58.266Z"
+              "WhenOpened": "2025-04-16T11:04:58.266Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 18,
               "Title": "LoginModel.cs",
               "DocumentMoniker": "C:\\Users\\34015\\Desktop\\Temp\\TempWeb\\Model\\LoginModel.cs",
               "RelativeDocumentMoniker": "Model\\LoginModel.cs",
               "ToolTip": "C:\\Users\\34015\\Desktop\\Temp\\TempWeb\\Model\\LoginModel.cs",
               "RelativeToolTip": "Model\\LoginModel.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAkAAAARAAAAAAAAAA==",
+              "ViewState": "AgIAAAQAAAAAAAAAAABAwAkAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-16T09:00:08.458Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 24,
               "Title": "MathToolsFactory.cs",
               "DocumentMoniker": "C:\\Users\\34015\\Desktop\\Temp\\TempWeb\\Tools\\ToolsContext\\MathToolsFactory.cs",
               "RelativeDocumentMoniker": "Tools\\ToolsContext\\MathToolsFactory.cs",
@@ -175,87 +270,88 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 23,
               "Title": "MathChangeTools.cs",
               "DocumentMoniker": "C:\\Users\\34015\\Desktop\\Temp\\TempWeb\\Tools\\MathChangeTools.cs",
               "RelativeDocumentMoniker": "Tools\\MathChangeTools.cs",
               "ToolTip": "C:\\Users\\34015\\Desktop\\Temp\\TempWeb\\Tools\\MathChangeTools.cs",
               "RelativeToolTip": "Tools\\MathChangeTools.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAcAAAAAAAAAAABAwBUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-16T03:11:12.093Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 15,
               "Title": "ViewModel.cs",
               "DocumentMoniker": "C:\\Users\\34015\\Desktop\\Temp\\TempWeb\\Model\\ViewModel.cs",
               "RelativeDocumentMoniker": "Model\\ViewModel.cs",
               "ToolTip": "C:\\Users\\34015\\Desktop\\Temp\\TempWeb\\Model\\ViewModel.cs",
               "RelativeToolTip": "Model\\ViewModel.cs",
-              "ViewState": "AgIAACQAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-16T04:08:36.601Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 26,
               "Title": "RelayCommond.cs",
               "DocumentMoniker": "C:\\Users\\34015\\Desktop\\Temp\\TempWeb\\RelayCommond\\RelayCommond.cs",
               "RelativeDocumentMoniker": "RelayCommond\\RelayCommond.cs",
               "ToolTip": "C:\\Users\\34015\\Desktop\\Temp\\TempWeb\\RelayCommond\\RelayCommond.cs",
               "RelativeToolTip": "RelayCommond\\RelayCommond.cs",
-              "ViewState": "AgIAACQAAAAAAAAAAAAAADkAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAACIAAAAAAAAAAABAwDkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-02T11:29:36.926Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 14,
               "Title": "LoginVm.cs",
               "DocumentMoniker": "C:\\Users\\34015\\Desktop\\Temp\\TempWeb\\VM\\LoginVm.cs",
               "RelativeDocumentMoniker": "VM\\LoginVm.cs",
               "ToolTip": "C:\\Users\\34015\\Desktop\\Temp\\TempWeb\\VM\\LoginVm.cs",
               "RelativeToolTip": "VM\\LoginVm.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAAEwAAAAuAAAAAAAAAA==",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAAB4AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-02T04:58:27.204Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 25,
               "Title": "SocketWpf.cs",
               "DocumentMoniker": "C:\\Users\\34015\\Desktop\\Temp\\TempWeb\\VM\\SocketWpf.cs",
               "RelativeDocumentMoniker": "VM\\SocketWpf.cs",
               "ToolTip": "C:\\Users\\34015\\Desktop\\Temp\\TempWeb\\VM\\SocketWpf.cs",
               "RelativeToolTip": "VM\\SocketWpf.cs",
-              "ViewState": "AgIAAHoAAAAAAAAAAAAAAEcAAAArAAAAAAAAAA==",
+              "ViewState": "AgIAAHgAAAAAAAAAAABAwEcAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-16T11:48:33.783Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 17,
               "Title": "ViewModelDev.cs",
               "DocumentMoniker": "C:\\Users\\34015\\Desktop\\Temp\\TempWeb\\Model\\ViewModelDev.cs",
               "RelativeDocumentMoniker": "Model\\ViewModelDev.cs",
               "ToolTip": "C:\\Users\\34015\\Desktop\\Temp\\TempWeb\\Model\\ViewModelDev.cs",
               "RelativeToolTip": "Model\\ViewModelDev.cs",
-              "ViewState": "AgIAALsAAAAAAAAAAAAgwNMAAABeAAAAAAAAAA==",
+              "ViewState": "AgIAACsAAAAAAAAAAAAgwEMAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-10T10:42:39.405Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 6,
               "Title": "ViewModelMove.cs",
               "DocumentMoniker": "C:\\Users\\34015\\Desktop\\Temp\\TempWeb\\Model\\ViewModelMove.cs",
               "RelativeDocumentMoniker": "Model\\ViewModelMove.cs",
               "ToolTip": "C:\\Users\\34015\\Desktop\\Temp\\TempWeb\\Model\\ViewModelMove.cs",
               "RelativeToolTip": "Model\\ViewModelMove.cs",
-              "ViewState": "AgIAADwAAAAAAAAAAAAAADoAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAADoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-16T04:15:11.528Z"
+              "WhenOpened": "2025-03-16T04:15:11.528Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -271,7 +367,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 20,
               "Title": "User.cs",
               "DocumentMoniker": "C:\\Users\\34015\\Desktop\\Temp\\TempWeb\\Model\\User.cs",
               "RelativeDocumentMoniker": "Model\\User.cs",
@@ -283,7 +379,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 27,
               "Title": "AppPage.cs",
               "DocumentMoniker": "C:\\Users\\34015\\Desktop\\Temp\\TempWeb\\Navigation\\AppPage.cs",
               "RelativeDocumentMoniker": "Navigation\\AppPage.cs",
@@ -295,7 +391,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 21,
               "Title": "AssemblyInfo.cs",
               "DocumentMoniker": "C:\\Users\\34015\\Desktop\\Temp\\TempWeb\\AssemblyInfo.cs",
               "RelativeDocumentMoniker": "AssemblyInfo.cs",
@@ -307,42 +403,44 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 12,
               "Title": "App.xaml.cs",
               "DocumentMoniker": "C:\\Users\\34015\\Desktop\\Temp\\TempWeb\\App.xaml.cs",
               "RelativeDocumentMoniker": "App.xaml.cs",
               "ToolTip": "C:\\Users\\34015\\Desktop\\Temp\\TempWeb\\App.xaml.cs",
               "RelativeToolTip": "App.xaml.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAgwDQAAAAqAAAAAAAAAA==",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAnwEEAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-02T05:26:17.155Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 10,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\34015\\Desktop\\Temp\\TempWeb\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "MainWindow.xaml.cs",
               "ToolTip": "C:\\Users\\34015\\Desktop\\Temp\\TempWeb\\MainWindow.xaml.cs",
               "RelativeToolTip": "MainWindow.xaml.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAWwB8AAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAWwB8AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-01T06:00:30.605Z"
+              "WhenOpened": "2025-03-01T06:00:30.605Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 4,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "C:\\Users\\34015\\Desktop\\Temp\\TempWeb\\MainWindow.xaml",
               "RelativeDocumentMoniker": "MainWindow.xaml",
               "ToolTip": "C:\\Users\\34015\\Desktop\\Temp\\TempWeb\\MainWindow.xaml",
               "RelativeToolTip": "MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-03-01T06:16:24.784Z"
+              "WhenOpened": "2025-03-01T06:16:24.784Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 16,
               "Title": "App.xaml",
               "DocumentMoniker": "C:\\Users\\34015\\Desktop\\Temp\\TempWeb\\App.xaml",
               "RelativeDocumentMoniker": "App.xaml",
@@ -354,7 +452,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 28,
               "Title": "OLED.h",
               "DocumentMoniker": "C:\\Users\\34015\\Desktop\\\u9A71\u52A8\u5E93\\OLED\\16\u5F15\u811A\\OLED.h",
               "RelativeDocumentMoniker": "..\\..\\\u9A71\u52A8\u5E93\\OLED\\16\u5F15\u811A\\OLED.h",
@@ -366,61 +464,38 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "index.xaml",
               "DocumentMoniker": "C:\\Users\\34015\\Desktop\\Temp\\TempWeb\\index.xaml",
               "RelativeDocumentMoniker": "index.xaml",
               "ToolTip": "C:\\Users\\34015\\Desktop\\Temp\\TempWeb\\index.xaml",
               "RelativeToolTip": "index.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-03-01T08:44:58.696Z"
+              "WhenOpened": "2025-03-01T08:44:58.696Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "WpfAppLogin.csproj",
-              "DocumentMoniker": "C:\\Users\\34015\\Desktop\\Temp\\TempWeb\\WpfAppLogin.csproj",
-              "RelativeDocumentMoniker": "WpfAppLogin.csproj",
-              "ToolTip": "C:\\Users\\34015\\Desktop\\Temp\\TempWeb\\WpfAppLogin.csproj",
-              "RelativeToolTip": "WpfAppLogin.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-03-30T05:23:22.512Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "Microsoft.Common.CurrentVersion.targets",
-              "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
-              "ToolTip": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
-              "ViewState": "AgIAANsUAAAAAAAAAAAAwPMUAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
-              "WhenOpened": "2025-03-02T13:00:11.459Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 29,
               "Title": "XamlReader.cs",
               "DocumentMoniker": "C:\\Users\\24822\\AppData\\Local\\Temp\\.vsdbgsrc\\811f0c1102ba7a3d32ee827d0bb52f1af2ec958c7f3fb7abe7c05f601195e6c8\\XamlReader.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\24822\\AppData\\Local\\Temp\\.vsdbgsrc\\811f0c1102ba7a3d32ee827d0bb52f1af2ec958c7f3fb7abe7c05f601195e6c8\\XamlReader.cs",
               "ToolTip": "C:\\Users\\24822\\AppData\\Local\\Temp\\.vsdbgsrc\\811f0c1102ba7a3d32ee827d0bb52f1af2ec958c7f3fb7abe7c05f601195e6c8\\XamlReader.cs",
               "RelativeToolTip": "..\\..\\..\\..\\24822\\AppData\\Local\\Temp\\.vsdbgsrc\\811f0c1102ba7a3d32ee827d0bb52f1af2ec958c7f3fb7abe7c05f601195e6c8\\XamlReader.cs",
-              "ViewState": "AgIAAKYBAAAAAAAAAAASwLQBAAAoAAAAAQAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-10T13:11:27.903Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 22,
               "Title": "WpfAppLogin",
               "DocumentMoniker": "C:\\Users\\34015\\Desktop\\Temp\\TempWeb\\WpfAppLogin.csproj",
               "RelativeDocumentMoniker": "WpfAppLogin.csproj",
               "ToolTip": "C:\\Users\\34015\\Desktop\\Temp\\TempWeb\\WpfAppLogin.csproj",
               "RelativeToolTip": "WpfAppLogin.csproj",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-03-11T04:49:10.357Z"
+              "WhenOpened": "2025-03-11T04:49:10.357Z",
+              "EditorCaption": ""
             }
           ]
         }

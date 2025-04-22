@@ -10,27 +10,43 @@
 
   <ItemGroup>
     <None Remove="Recesource\images\Analytic.png" />
+    <None Remove="Recesource\images\card.png" />
     <None Remove="Recesource\images\iceCold.png" />
+    <None Remove="Recesource\images\LeftArrow.png" />
     <None Remove="Recesource\images\light.png" />
+    <None Remove="Recesource\images\rightArrow.png" />
     <None Remove="Recesource\images\sun.png" />
     <None Remove="Recesource\images\Temp.png" />
     <None Remove="Recesource\images\TempRed.png" />
     <None Remove="Recesource\images\yun.png" />
+    <None Remove="Recesource\UserPageIcon.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Recesource\images\card.png" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="HandyControl" Version="3.5.1" />
     <PackageReference Include="LiveChartsCore.SkiaSharpView.WPF" Version="2.0.0-rc5.4" />
+    <PackageReference Include="Microsoft.Extensions.Caching.Memory" Version="9.0.4" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="9.0.4" />
+    <PackageReference Include="Microsoft.Extensions.Http" Version="9.0.4" />
+    <PackageReference Include="MvvmLightLibs" Version="5.4.1.1" />
+    <PackageReference Include="System.Runtime.Caching" Version="9.0.4" />
   </ItemGroup>
 
   <ItemGroup>
     <Resource Include="Recesource\images\backgroundHome.jpg" />
     <Resource Include="Recesource\images\analytic.png" />
     <Resource Include="Recesource\images\iceCold.png" />
+    <Resource Include="Recesource\images\LeftArrow.png" />
+    <Resource Include="Recesource\images\rightArrow.png" />
     <Resource Include="Recesource\images\sun.png" />
     <Resource Include="Recesource\images\Temp.png" />
     <Resource Include="Recesource\images\TempRed.png" />
     <Resource Include="Recesource\images\yun.png" />
+    <Resource Include="Recesource\UserPageIcon.png" />
   </ItemGroup>
 
 </Project>

@@ -1,21 +1,17 @@
-﻿using GalaSoft.MvvmLight;
-using GalaSoft.MvvmLight.Views;
-using System;
-using System.Collections.Generic;
+﻿
 using System.ComponentModel;
 using System.Diagnostics;
-using System.Linq;
+
 using System.Net.Http;
-using System.Security.RightsManagement;
+
 using System.Text;
 using System.Text.Json;
-using System.Threading.Tasks;
+
 using System.Windows;
-using System.Windows.Input;
+
 using WpfAppLogin.Model;
 
 
-using WpfAppLogin.RelayCommond;
 
 namespace WpfAppLogin.VM
 {

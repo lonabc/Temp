@@ -51,6 +51,7 @@ public partial class App :Application
         services.AddTransient<MainWindow>();
         services.AddTransient<index>();
         services.AddTransient<HomePage>();
+        services.AddTransient<UserPage>();
 
         // 注册服务
         services.AddHttpClient("MyApi", client =>
@@ -64,7 +65,9 @@ public partial class App :Application
 
         services.AddScoped<LoginModel>();
         services.AddScoped<LoginVm>(); // Registe
-     
+        services.AddScoped<UserPageModel>();
+        services.AddScoped<UserModelPageVm>(); // Register UserPageVm
+
     }
 }
 

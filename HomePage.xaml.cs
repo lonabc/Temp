@@ -55,7 +55,7 @@ namespace WpfAppLogin
                 await Dispatcher.InvokeAsync(() =>
                 {
                     // 通过服务提供者获取MainWindow实例
-                    var mainWindow = _serviceProvider.GetRequiredService<MainWindow>();
+                    var mainWindow = _serviceProvider.GetRequiredService<UserPage>();
                     mainWindow.Show();
                     this.Close();
                 });
