@@ -27,7 +27,6 @@ namespace WpfAppLogin.Model
         private ObservableValue _valueTemp; // 动态温度值
         private ObservableValue _valueAirQuility; // 动态湿度值
         private ObservableValue _valueLight; // 动态噪音值
-
         private MathToolsFactory _mathToolsFactory; // 数学工具工厂
 
         public ObservableCollection<ISeries> SeriesYuan { get; set; }

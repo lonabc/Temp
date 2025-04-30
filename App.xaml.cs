@@ -38,7 +38,7 @@ public partial class App :Application
 
 
         // 显示主窗口（通过 DI 解析）
-        var mainWindow = ServiceProvider.GetRequiredService<HomePage>();
+        var mainWindow = ServiceProvider.GetRequiredService<UserPage>();
         mainWindow.Show();
 
     }

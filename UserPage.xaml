@@ -5,8 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfAppLogin"
         xmlns:hc="https://handyorg.github.io/handycontrol"
+        xmlns:lvc="clr-namespace:LiveChartsCore.SkiaSharpView.WPF;assembly=LiveChartsCore.SkiaSharpView.WPF"
         mc:Ignorable="d"
-        Title="UserPage" Height="650" Width="1000">
+        Title="UserPage" Height="800" Width="1200">
 
     <Window.Resources>
         <Style TargetType="Button" x:Key="TestButton">
@@ -15,32 +16,12 @@
         <Style TargetType="Menu" x:Key="MyMenu" BasedOn="{StaticResource MenuBaseStyle}">
             <Setter Property="Background" Value="Transparent"/>
         </Style>
+        <Style TargetType="TextBlock" x:Key="TextDefault" BasedOn="{StaticResource TextBlockLargeBold}">
+            <Setter Property="FontSize" Value="20"/>
+        </Style>
         <!-- 阴影效果 -->
-        <DropShadowEffect x:Key="DefaultCardShadow" 
-                     Color="#ADB5BD"
-                     Direction="320"
-                     ShadowDepth="5"
-                     Opacity="0.5"
-                     BlurRadius="10"/>
-        <DropShadowEffect x:Key="HoverCardShadow" 
-                     Color="#FF2563EB"
-                     Direction="320"
-                     ShadowDepth="7"
-                     Opacity="0.7"
-                     BlurRadius="15"/>
 
         <!-- 卡片样式 -->
-        <Style TargetType="Image" x:Key="CardStyle">
-            <Setter Property="Effect" Value="{StaticResource DefaultCardShadow}"/>
-            <Setter Property="Opacity" Value="0.9"/>
-
-            <Style.Triggers>
-                <Trigger Property="IsMouseOver" Value="True">
-                    <Setter Property="Effect" Value="{StaticResource HoverCardShadow}"/>
-                    <Setter Property="Opacity" Value="1"/>
-                </Trigger>
-            </Style.Triggers>
-        </Style>
 
     </Window.Resources>
     <Grid Background="#EFF2F9">
@@ -121,45 +102,128 @@
                     </StackPanel>
                     <!-- 图片固定在底部 -->
                     <Image Grid.Row="1" 
-               Source="/Recesource/UserPageIcon.png" 
-               Stretch="UniformToFill" 
-               Margin="10"/>
+  Source="/Recesource/UserPageIcon.png" 
+  Stretch="UniformToFill" 
+  Margin="10"/>
+
                 </Grid>
             </Grid>
             <Grid Grid.Column="1">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="Auto"/>
                     <RowDefinition Height="*"/>
+                    <RowDefinition Height="Auto"/>
                 </Grid.RowDefinitions>
                 <Grid>
                     <StackPanel Orientation="Horizontal">
-                        <Image Source="/Recesource/images/LeftArrow.png" Stretch="UniformToFill" Width="20" />
+                        <Image Source="/Recesource/images/LeftArrow.png" Margin="10,0,30,0" Stretch="UniformToFill" Width="20" />
                         <Image Source="/Recesource/images/rightArrow.png" Stretch="UniformToFill" Width="20"/>
-
                     </StackPanel>
                     <Button Style="{StaticResource ButtonInfo}" Content="返回首页" HorizontalAlignment="Right" Background="#6A74C9" Margin="0,2,10,0" Width="100"/>
-
                 </Grid>
                 <Grid Grid.Row="1">
                     <StackPanel>
-                        <TextBlock FontSize="20" Style="{StaticResource TextBlockLargeBold}" HorizontalAlignment="left" VerticalAlignment="Top" Margin="5">最近使用</TextBlock>
+                        <TextBlock  Style="{StaticResource TextDefault}" HorizontalAlignment="left" VerticalAlignment="Top" Margin="5">最近使用</TextBlock>
                         <Grid>
                             <Canvas Width="155" Height="140" Margin="40,0,0,0" HorizontalAlignment="Left">
-                                <Image  Style="{StaticResource CardStyle}"  Source="/Recesource/images/card.png"  Stretch="UniformToFill"  Width="155"  Height="140"  />
-                                
-                                <TextBlock  Text="Hello, WPF!"  Foreground="White"  FontSize="16" FontWeight="Bold" Canvas.Left="0" Canvas.Top="0"  Width="155" Height="140" HorizontalAlignment="Center"  VerticalAlignment="Center" />
-                                <Button  Content="Click Me"  Width="80"    Height="30"  Canvas.Left="37.5"    Canvas.Top="95"  Background="#FF2563EB"  Foreground="White" />
+                                <Image  MouseEnter="CardImage_MouseEnter"
+                                        MouseLeave="CardImage_MouseLeave"  
+                                        IsHitTestVisible="True"
+                                    
+                                        Source="/Recesource/images/card.png"  Stretch="UniformToFill"  Width="155"  Height="140"/>
+                                <TextBlock  Text="Hello, WPF!" Foreground="White"  FontSize="16" FontWeight="Bold" Canvas.Left="0" Canvas.Top="0" 
+                                            Width="155" Height="140" HorizontalAlignment="Center"  VerticalAlignment="Center"  IsHitTestVisible="False"/>
+                                <Button  Content="Click Me"  Width="80"  Height="30"  Canvas.Left="37.5" Canvas.Top="95"  Background="#FF2563EB"  Foreground="White"  IsHitTestVisible="False"/>
+                            </Canvas>
+                            <Canvas Width="155" Height="140" Margin="40,0,0,0" HorizontalAlignment="Center">
+                                <Image  MouseEnter="CardImage_MouseEnter"
+                                        MouseLeave="CardImage_MouseLeave"  
+                                        IsHitTestVisible="True" Source="/Recesource/images/card.png" Stretch="UniformToFill" Width="155" Height="140" HorizontalAlignment="Left" VerticalAlignment="Center" Canvas.Left="-10"/>
+                            </Canvas>
+                            <Canvas  Width="155" Height="140" Margin="0,0,40,0" HorizontalAlignment="Right" >
+                                <Image  MouseEnter="CardImage_MouseEnter"
+                                        MouseLeave="CardImage_MouseLeave"  
+                                        IsHitTestVisible="True" Source="/Recesource/images/card.png" Stretch="UniformToFill" Width="155" Margin="0,0,40,0" Height="140" HorizontalAlignment="Right"/>
                             </Canvas>
 
-                            <Image Source="/Recesource/images/card.png" Stretch="UniformToFill" Width="155" Margin="10" Height="140" HorizontalAlignment="Center"/>
-                            <Image Source="/Recesource/images/card.png" Stretch="UniformToFill" Width="155" Margin="0,0,40,0" Height="140" HorizontalAlignment="Right"/>
                         </Grid>
+                        <Grid Grid.Row="2" Margin="0,10,0,0">
+                            <TextBlock Style="{StaticResource TextDefault}" Text="监控报告" HorizontalAlignment="Left" Margin="5"/>
+                            <Button Style="{StaticResource ButtonPrimary}" Content="查看全部" HorizontalAlignment="Right" Margin="0,0,10,0" Width="100"/>
+                        </Grid>
+                        <ListView ItemsSource="{Binding listViewModels}" Margin="20" Background="#EFF2F9">
+                            <ListView.View>
+                                <GridView>
+                                    <!-- 隐藏所有列头 -->
+                                    <GridView.ColumnHeaderContainerStyle>
+                                        <Style TargetType="GridViewColumnHeader">
+                                            <Setter Property="Visibility" Value="Collapsed"/>
+                                        </Style>
+                                    </GridView.ColumnHeaderContainerStyle>
+                                    <!-- 用户头像列（新增） -->
+                                    <GridViewColumn Width="80" >
+                                        <GridViewColumn.CellTemplate>
+                                            <DataTemplate>
+                                                <hc:Gravatar Style="{StaticResource GravatarCircleImg}" Width="36" Height="36">
+                                                    <Image Source="/Recesource/images/backgroundHome.jpg" Stretch="UniformToFill" Width="72" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                                </hc:Gravatar>
+                                            </DataTemplate>
+                                        </GridViewColumn.CellTemplate>
+                                    </GridViewColumn>
+                                    <!-- 选项列 -->
+                                    <GridViewColumn Width="100"  DisplayMemberBinding="{Binding name}"/>
+                                    <!-- 更新时间列 -->
+                                    <GridViewColumn Width="200"  DisplayMemberBinding="{Binding Remark}"/>
+                                    <!-- 评估列-->
+                                    <GridViewColumn Width="100"  DisplayMemberBinding="{Binding index}"/>
+                                </GridView>
+                            </ListView.View>
+                        </ListView>
+                        <TextBlock Style="{StaticResource TextDefault}" Text="功能选择"  HorizontalAlignment="Left" Margin="5"/>
+                        <!-- 这里是一个水平滚动的ScrollViewer -->
+                        <ScrollViewer hc:ScrollViewerAttach.Orientation="Horizontal" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Hidden" Height="300">
+                            <StackPanel Orientation="Horizontal">
+                                <Border Style="{StaticResource BorderRegion}" Width="200" Height="200" Margin="10,10,32,10">
+                                    <Border Background="{DynamicResource PrimaryBrush}">
+                                        <TextBlock Text="Test" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="White"/>
+                                    </Border>
+                                </Border>
+                                <Border Style="{StaticResource BorderRegion}" Width="200" Height="200" Margin="10,10,32,10">
+                                    <Border Background="{DynamicResource PrimaryBrush}">
+                                        <TextBlock Text="Test1" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="White"/>
+                                    </Border>
+                                </Border>
+                                <Border Style="{StaticResource BorderRegion}" Width="200" Height="200" Margin="10,10,32,10">
+                                    <Border Background="{DynamicResource PrimaryBrush}">
+                                        <TextBlock Text="Test2" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="White"/>
+                                    </Border>
+                                </Border>
+                                <Border Style="{StaticResource BorderRegion}" Width="200" Height="200" Margin="10,10,32,10">
+                                    <Border Background="{DynamicResource PrimaryBrush}">
+                                        <TextBlock Text="Test3" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="White"/>
+                                    </Border>
+                                </Border>
+                                <Border Style="{StaticResource BorderRegion}" Width="200" Height="200" Margin="10,10,32,10">
+                                    <Border Background="{DynamicResource PrimaryBrush}">
+                                        <TextBlock Text="Test4" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="White"/>
+                                    </Border>
+                                </Border>
+                            </StackPanel>
+                        </ScrollViewer>
+
                     </StackPanel>
                 </Grid>
-            
             </Grid>
             <Grid Grid.Column="2">
+               
                 <hc:SearchBar Name="SearchBarCustomVerify"  Style="{StaticResource SearchBarPlus}"  Width="150" Height="20" VerticalAlignment="Top"/>
+
+
+                <lvc:CartesianChart  Height="200" VerticalAlignment="Bottom"
+                    Series="{Binding UserPageLiveCharts.Series}"
+                    XAxes="{Binding UserPageLiveCharts.XAxes}"
+                    SyncContext="{Binding UserPageLiveCharts.Sync}">    
+                </lvc:CartesianChart>
             </Grid>
         </Grid>
     </Grid>
