@@ -30,10 +30,11 @@ namespace WpfAppLogin
             Loaded += SplashWindow_Loaded;
         }
 
+        
+
         private void SplashWindow_Loaded(object sender, RoutedEventArgs e)
         {
            
-
             var textFadeIn = new DoubleAnimation
             {
                 From = 0,
@@ -55,7 +56,7 @@ namespace WpfAppLogin
                 await Dispatcher.InvokeAsync(() =>
                 {
                     // 通过服务提供者获取MainWindow实例
-                    var mainWindow = _serviceProvider.GetRequiredService<UserPage>();
+                    var mainWindow = _serviceProvider.GetRequiredService<MainWindow>();
                     mainWindow.Show();
                     this.Close();
                 });

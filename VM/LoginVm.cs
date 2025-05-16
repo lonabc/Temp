@@ -10,6 +10,7 @@ using System.Text.Json;
 using System.Windows;
 
 using WpfAppLogin.Model;
+using WpfAppLogin.Services;
 
 
 
@@ -19,15 +20,15 @@ namespace WpfAppLogin.VM
     {
         #region 服务层数据绑定
         private LoginModel _loginModel;
-
-        private readonly HttpClient _httpClient;
    
+        private readonly LoginServices _loginServices;
 
-        public LoginVm(IHttpClientFactory httpClientFactory,LoginModel loginModel)
+        public LoginVm(LoginModel loginModel,LoginServices loginServices)
         {
-            _httpClient = httpClientFactory.CreateClient("MyApi");
+         
             _loginModel = loginModel;
-           
+            _loginServices = loginServices;
+
         }
       
 
@@ -54,37 +55,7 @@ namespace WpfAppLogin.VM
 
         public async Task<string> login()
         {
-
-            try
-            {
-                _loginModel.id = "1";
-
-                 var json = JsonSerializer.Serialize(_loginModel); //将对象序列化为JSON字符串
-                var content = new StringContent(json, Encoding.UTF8, "application/json"); //规定请求体的格式为JSON，UTF8编码
-                var fullUrl = new Uri(_httpClient.BaseAddress, "/LoginTest").AbsoluteUri;
-
-
-                var response = await _httpClient.PostAsync("/LoginTest", content);
-                response.EnsureSuccessStatusCode();
-                var responseBody = await response.Content.ReadAsStringAsync();
-                string responseCode = responseBody.ToString();
-                if(responseCode.Contains("登入失败"))
-                    return "500";
-                MessageBox.Show(responseCode);
-                return "200";
-                     
-            }
-            catch (HttpRequestException ex)
-            {
-                Trace.WriteLine($"请求失败: {ex.Message}");
-                if (ex.StatusCode.HasValue)
-                {
-                    Trace.WriteLine($"状态码: {ex.StatusCode}");
-                }
-                return ex.StatusCode.ToString();
-            }
-         
-
+            return await _loginServices.login(_loginModel);
         }
 
         bool CanLoginExecute()

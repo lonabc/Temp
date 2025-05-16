@@ -27,9 +27,7 @@
         <BitmapImage x:Key="sun" UriSource="pack://application:,,,/Recesource/images/sun.png"/>
         <BitmapImage x:Key="TempRed" UriSource="pack://application:,,,/Recesource/images/TempRed.png"/>
 
-
-
-
+        <BitmapImage x:Key="User" UriSource="pack://application:,,,/Recesource/images/user.png"/>
     </Window.Resources>
     <Grid Background="#22223B" >
         <Grid.ColumnDefinitions>
@@ -47,8 +45,17 @@
             </Grid.RowDefinitions>
             <Viewbox Stretch="Fill" Margin="0,0,5,5">
                 <StackPanel Grid.Row="0">
-                    <hc:SearchBar Grid.Column="0" Grid.Row="0" Command="{Binding SearchCmd}" Height="19" VerticalAlignment="Top" Margin="15,8,10,0" CommandParameter="{Binding Text,RelativeSource={RelativeSource Self}}"/>
-
+                    <StackPanel Orientation="Horizontal">
+                        <Button Style="{StaticResource ButtonPrimary}" Margin="10,8,0,0" Width="90" Click="goToUserCenter"> 
+                            <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                                <!-- 图标 -->
+                                <Image Source="/Recesource/images/LeftArrow.png"   Width="16" Height="16"  Margin="0,0,5,0"  VerticalAlignment="Center"/>
+                                <TextBlock Text="用户中心" VerticalAlignment="Center" />
+                            </StackPanel>
+                        </Button>
+                        <hc:SearchBar Grid.Column="0" Grid.Row="0" Command="{Binding SearchCmd}" Height="19" VerticalAlignment="Top" Margin="15,8,10,0" CommandParameter="{Binding Text,RelativeSource={RelativeSource Self}}" Width="283"/>
+                    </StackPanel>
+                       
                     <hc:Card x:Name="myCard" BorderThickness="0" Effect="{DynamicResource EffectShadow2}" Margin="16,10,10,0"    HorizontalAlignment="Left" Opacity="0.5">
                         <hc:Card.Background>
                             <DrawingBrush>

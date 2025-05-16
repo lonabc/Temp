@@ -29,6 +29,8 @@ namespace WpfAppLogin.Model
         private ObservableValue _valueLight; // 动态噪音值
         private MathToolsFactory _mathToolsFactory; // 数学工具工厂
 
+
+
         public ObservableCollection<ISeries> SeriesYuan { get; set; }
 
 
@@ -208,14 +210,14 @@ namespace WpfAppLogin.Model
             _valueTemp.Value =(int)(sensorData[0] * 100+0.5) / 100.0; // 设置饼状图温度值,保留两位小数
             tempView = _valueTemp.Value + "°C"; // 更新显示的温度值
 
-            float airQuality = MathToolsFactory.CreateMathTools<float>("float").mathConversion((float)sensorData[2]);          
+            float airQuality = MathToolsFactory.CreateMathTools<float>("float").mathConversion((float)sensorData[1]);          
           
             
             _valueAirQuility.Value = (int) airQuality; // 设置饼状图空气质量值,保留两位小数
 
 
 
-            _valueLight.Value = (int)(sensorData[1]* 100.0 / 3.3d ); // 设置饼状图光照强度值,保留两位小数
+            _valueLight.Value = (int)(sensorData[2]* 100.0 / 3.3d ); // 设置饼状图光照强度值,保留两位小数
 
             values.Add((double)_valueTemp.Value);
             

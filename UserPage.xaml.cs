@@ -24,23 +24,19 @@ namespace WpfAppLogin
     /// </summary>
     public partial class UserPage : Window
     {
-
-        private UserModelPageVm _userPageModelVM;
-       
-        public UserPage(UserModelPageVm userModelPageVm)
+        private SocketWpf _socketClient;
+        public UserPage( )
         {
             InitializeComponent();
-
-            _userPageModelVM = userModelPageVm;
-            this.Closed += UserPage_Closed;
+            UserModelPageVm _userPageModelVM = new UserModelPageVm(this);
+            //      this.Closed += UserPage_Closed;
+            _socketClient = new SocketWpf(); //wpf里socket初始化
             this.DataContext = _userPageModelVM;//绑定数据源
         }
-        private void UserPage_Closed(object sender, EventArgs e)
-        {
-            
-
-            Environment.Exit(0);
-        }
+        //private void UserPage_Closed(object sender, EventArgs e)
+        //{
+        //    Environment.Exit(0);
+        //}
 
         private void CardImage_MouseEnter(object sender, MouseEventArgs e)
         {

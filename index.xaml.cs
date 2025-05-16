@@ -17,6 +17,7 @@ using WpfSample;
 using WpfAppLogin.Model;
 using WpfAppLogin.VM;
 using HandyControl.Controls;
+using WpfAppLogin.Navigation;
 
 namespace WpfAppLogin
 {
@@ -28,6 +29,7 @@ namespace WpfAppLogin
     public partial class index 
     {
         private SocketWpf _socketClient;
+        
         public index()
         {
             InitializeComponent();
@@ -64,6 +66,10 @@ namespace WpfAppLogin
             {
                 ONorOFF.Text = "ON";
             }
+        }
+        private void goToUserCenter(object sender, RoutedEventArgs e)
+        {
+            WindowNavigationService.NavigateTo<UserPage>(this);
         }
     }
 }

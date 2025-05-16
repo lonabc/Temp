@@ -18,6 +18,7 @@
     <None Remove="Recesource\images\sun.png" />
     <None Remove="Recesource\images\Temp.png" />
     <None Remove="Recesource\images\TempRed.png" />
+    <None Remove="Recesource\images\user.png" />
     <None Remove="Recesource\images\yun.png" />
     <None Remove="Recesource\UserPageIcon.png" />
   </ItemGroup>
@@ -45,6 +46,7 @@
     <Resource Include="Recesource\images\sun.png" />
     <Resource Include="Recesource\images\Temp.png" />
     <Resource Include="Recesource\images\TempRed.png" />
+    <Resource Include="Recesource\images\user.png" />
     <Resource Include="Recesource\images\yun.png" />
     <Resource Include="Recesource\UserPageIcon.png" />
   </ItemGroup>

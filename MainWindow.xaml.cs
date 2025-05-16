@@ -34,13 +34,16 @@ public partial class MainWindow : Window
          string code=await _loginVm.login();
         if (code.Equals("200"))
         {
-            WindowNavigationService.NavigateTo<index>(this);
+            
+            WindowNavigationService.NavigateTo<UserPage>(this,App.ServiceProvider);
         }
         else
         { 
             MessageBox.Show("登入失败");
         }
     }
+
+    
    
 
 

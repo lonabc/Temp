@@ -1,4 +1,5 @@
 ﻿using GalaSoft.MvvmLight.Command;
+using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -11,6 +12,7 @@ using System.Windows;
 using System.Windows.Media.Effects;
 using WpfAppLogin.Model;
 using WpfAppLogin.Model.PartModel;
+using WpfAppLogin.Navigation;
 using WpfSample;
 
 
@@ -19,9 +21,11 @@ namespace WpfAppLogin.VM
 {
     public class UserModelPageVm : INotifyPropertyChanged
     {
+        private readonly Window _currentWindow;
         public ObservableCollection<UserPageModel> Menus { get; set; }
         public ObservableCollection<ListViewModel> listViewModels { get; set; }
         private UserPageLiveCharts _userPageLiveCharts;
+     
 
         public UserPageLiveCharts UserPageLiveCharts { get { 
                 return _userPageLiveCharts;
@@ -37,24 +41,31 @@ namespace WpfAppLogin.VM
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
 
-        public UserModelPageVm()
+        public UserModelPageVm(Window currentWindow)
         {
+            _currentWindow = currentWindow;
             Menus = new ObservableCollection<UserPageModel>
             {
                 new UserPageModel
                 {
                     Header = "家具控制",
-                    Command = new RelayCommand(() => MessageBox.Show("Open clicked!"))
+                    Command = new RelayCommand(()=>{MessageBox.Show("已跳转到对应页面"); }),
+                    IsSelected = false // 默认不选中
                 },
                 new UserPageModel
                 {
                     Header = "检测中心",
-                    Command = new RelayCommand(() => MessageBox.Show("Save clicked!"))
+                    Command =  new RelayCommand(() => {
+                        
+                        WindowNavigationService.NavigateTo<index>(_currentWindow);
+                    }) ,
+                    IsSelected = true // 默认选中
                 },
                 new UserPageModel
                 {
                     Header = "退出登录",
-                    Command = new RelayCommand(() => MessageBox.Show("out login clicked!"))
+                    Command = new RelayCommand(() => MessageBox.Show("out login clicked!")),
+                     IsSelected = false // 默认不选中
                 },
 
             };
@@ -81,8 +92,6 @@ namespace WpfAppLogin.VM
                 },
             };
             UserPageLiveCharts = new UserPageLiveCharts();
-
-
         }
 
      

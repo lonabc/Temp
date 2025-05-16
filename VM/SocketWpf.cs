@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Threading;
 using WpfAppLogin.Model;
+using WpfSample;
 
 namespace WpfAppLogin.VM
 {
@@ -26,7 +27,7 @@ namespace WpfAppLogin.VM
             ConnectToServer();
         }
 
-        public async void ConnectToServer()
+        public async Task  ConnectToServer()
         {
             try
             {
@@ -38,8 +39,9 @@ namespace WpfAppLogin.VM
             }
             catch (Exception ex)
             {
-                MessageBox.Show("连接失败" + ex.Message);
+                MessageBox.Show("连接失败:" + ex.Message);
             }
+            
         }
 
         private async Task ReceiveDataAsync()
@@ -70,6 +72,8 @@ namespace WpfAppLogin.VM
                         await SendDataAsync("接收到数据" + string.Join(", ", receivedArray));
                     }
                     ViewModelDev.sensorData = receivedArray; //数据传递给ViewModel，每隔10秒更新一次
+                    UserPageLiveCharts._sensorData = receivedArray; //数据传递给ViewModel，每隔10秒更新一次
+                   
                 }
                 catch (Exception ex)
                 {
