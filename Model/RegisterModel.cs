@@ -6,37 +6,39 @@ using System.Threading.Tasks;
 
 namespace WpfAppLogin.Model
 {
-    public class User
+    public  class RegisterModel
     {
+        private string _id;
         private string _name;
         private string _password;
-        private string _Id;
-        private string _Email;
+        private string _email;
         private string _verificationCode;
         public string verificationCode
         {
             get { return _verificationCode; }
             set { _verificationCode = value; }
         }
-        public string email
+        public string name
         {
-            get { return _Email; }
-            set { _Email = value; }
-        }
-        public string name {
             get { return _name; }
             set { _name = value; }
         }
+        public string id
+        {
+            get { return _id; }
+            set { _id = value; }
+        }
+
         public string password
         {
             get { return _password; }
-            set { _password = password; }
+            set { _password = value; }
         }
-        public string Id
-        {
-            get { return _Id; }
-            set { _Id = Id; }
 
+        public string email
+        {
+            get { return _email; }
+            set { _email = value; }
         }
     }
 }

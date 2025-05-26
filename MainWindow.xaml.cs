@@ -5,8 +5,11 @@ using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
+using System.Windows.Input;
 using WpfAppLogin.Navigation;
+using WpfAppLogin.Page;
 using WpfAppLogin.VM;
+using WpfAppLogin.VM.PageVmToTal;
 
 namespace WpfAppLogin;
 
@@ -16,14 +19,12 @@ namespace WpfAppLogin;
 public partial class MainWindow : Window
 {
     //ModelTest modelTest;
-    private readonly LoginVm _loginVm;
-
-
-    public MainWindow(LoginVm loginVm)
+    private readonly MainWindowPageVM _mainPageVM;
+    public MainWindow(MainWindowPageVM mainPageVM)
     {
         InitializeComponent();
-        _loginVm = loginVm;
-        DataContext = _loginVm;
+        _mainPageVM= mainPageVM;
+        DataContext = _mainPageVM;
        
     }
     
@@ -31,10 +32,10 @@ public partial class MainWindow : Window
     private async void  BtnLogin_Click(object sender, RoutedEventArgs e)
     {
        
-         string code=await _loginVm.login();
+        // string code=await _loginVm.login();
+        string code = await _mainPageVM.LoginVm.login();
         if (code.Equals("200"))
         {
-            
             WindowNavigationService.NavigateTo<UserPage>(this,App.ServiceProvider);
         }
         else
@@ -42,10 +43,9 @@ public partial class MainWindow : Window
             MessageBox.Show("登入失败");
         }
     }
-
-    
-   
-
-
+    private void Hyperlink_Click(object sender, RoutedEventArgs e)
+    {
+        WindowNavigationService.NavigateTo<Register>(this, App.ServiceProvider);
+    }
 }
 

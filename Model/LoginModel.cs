@@ -12,6 +12,7 @@ namespace WpfAppLogin.Model
         private string _id;
         private string _name;
         private string _password;
+        private string _email;
 
         public string name
         {
@@ -28,6 +29,11 @@ namespace WpfAppLogin.Model
         {
             get { return _password; }
             set { _password = value;  }
+        }
+
+        public string email {
+            get { return _email; }
+            set { _email = value; }
         }
     }
 }

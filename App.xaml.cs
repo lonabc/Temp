@@ -10,9 +10,12 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Threading;
 using WpfAppLogin.Model;
+using WpfAppLogin.Page;
 using WpfAppLogin.Services;
+using WpfAppLogin.Tools;
 using WpfAppLogin.Tools.ToolsContext;
 using WpfAppLogin.VM;
+using WpfAppLogin.VM.PageVmToTal;
 
 
 namespace WpfAppLogin;
@@ -61,9 +64,10 @@ public partial class App :Application
         services.AddTransient<index>();
         services.AddTransient<HomePage>();
         services.AddTransient<UserPage>();
+        services.AddTransient<Register>();
 
         // 注册服务
-        services.AddHttpClient("MyApi", client =>
+        services.AddHttpClient("MyApi", client => //MyApi用于标识配置，为多服务访问做准备
         {
             client.BaseAddress = new Uri("http://localhost:5091");
             client.DefaultRequestHeaders.Accept.Add(
@@ -71,12 +75,23 @@ public partial class App :Application
         });
 
         services.AddMemoryCache(); // Register memory cache service
+       
 
+        #region 注册scoped服务
         services.AddScoped<LoginModel>();
+        services.AddScoped<RegisterModel>();
         services.AddScoped<LoginVm>(); // Registe
+        services.AddScoped<RegisterVM>();
         services.AddScoped<UserPageModel>();
         services.AddScoped<UserModelPageVm>(); // Register UserPageVm
         services.AddScoped<LoginServices>(); // Register LoginServices
+        services.AddScoped<RegisterServices>();
+        services.AddScoped<User>(); // Register User
+        services.AddScoped<MainWindowPageVM>();
+        services.AddScoped<CacheToolsMy>();
+    
+        #endregion
+
 
     }
 

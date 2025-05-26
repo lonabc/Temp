@@ -30,8 +30,6 @@ namespace WpfAppLogin.VM
             _loginServices = loginServices;
 
         }
-      
-
         public event PropertyChangedEventHandler PropertyChanged; 
         private void RaisePropertyChanged(string propertyName)
         {
@@ -55,6 +53,7 @@ namespace WpfAppLogin.VM
 
         public async Task<string> login()
         {
+          
             return await _loginServices.login(_loginModel);
         }
 

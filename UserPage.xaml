@@ -181,28 +181,28 @@
                                 </GridView>
                             </ListView.View>
                         </ListView>
-                        <TextBlock Style="{StaticResource TextDefault}" Text="功能选择"  HorizontalAlignment="Left" Margin="5"/>
+                        <TextBlock Style="{StaticResource TextDefault}" Text="设备控制"  HorizontalAlignment="Left" Margin="5"/>
                         <!-- 这里是一个水平滚动的ScrollViewer -->
                         <ScrollViewer hc:ScrollViewerAttach.Orientation="Horizontal" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Hidden" Height="300">
                             <StackPanel Orientation="Horizontal">
                                 <Border Style="{StaticResource BorderRegion}" Width="200" Height="200" Margin="10,10,32,10">
                                     <Border Background="{DynamicResource PrimaryBrush}">
-                                        <TextBlock Text="Test" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="White"/>
+                                        <TextBlock Text="灯泡开关控制" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="White"/>
                                     </Border>
                                 </Border>
                                 <Border Style="{StaticResource BorderRegion}" Width="200" Height="200" Margin="10,10,32,10">
                                     <Border Background="{DynamicResource PrimaryBrush}">
-                                        <TextBlock Text="Test1" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="White"/>
+                                        <TextBlock Text="预警开关控制" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="White"/>
                                     </Border>
                                 </Border>
                                 <Border Style="{StaticResource BorderRegion}" Width="200" Height="200" Margin="10,10,32,10">
                                     <Border Background="{DynamicResource PrimaryBrush}">
-                                        <TextBlock Text="Test2" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="White"/>
+                                        <TextBlock Text="光照传感器开关" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="White"/>
                                     </Border>
                                 </Border>
                                 <Border Style="{StaticResource BorderRegion}" Width="200" Height="200" Margin="10,10,32,10">
                                     <Border Background="{DynamicResource PrimaryBrush}">
-                                        <TextBlock Text="Test3" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="White"/>
+                                        <TextBlock Text="温度传感器控制" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="White"/>
                                     </Border>
                                 </Border>
                                 <Border Style="{StaticResource BorderRegion}" Width="200" Height="200" Margin="10,10,32,10">

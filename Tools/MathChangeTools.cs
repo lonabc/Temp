@@ -38,6 +38,4 @@ namespace WpfAppLogin.Tools
         }
     }
 
-
-
 }

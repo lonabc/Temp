@@ -48,7 +48,7 @@ namespace WpfAppLogin.VM
             {
                 new UserPageModel
                 {
-                    Header = "家具控制",
+                    Header = "用户中心",
                     Command = new RelayCommand(()=>{MessageBox.Show("已跳转到对应页面"); }),
                     IsSelected = false // 默认不选中
                 },
@@ -75,19 +75,19 @@ namespace WpfAppLogin.VM
                 new ListViewModel
                 {
                     index = "good",
-                    name = "灯光控制",
+                    name = "空气污染",
                     Remark=DateTime.Now+"",
                 },
                 new ListViewModel
                 {
                    index = "good",
-                    name = "窗帘控制",
+                    name = "当前温度",
                     Remark=DateTime.Now+"",
                 },
                 new ListViewModel
                 {
                    index = "good",
-                    name = "空调控制",
+                    name = "光照强度",
                     Remark=DateTime.Now+"",
                 },
             };

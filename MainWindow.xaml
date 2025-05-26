@@ -11,6 +11,12 @@
         <Style x:Key="Text" TargetType="TextBlock">
             <Setter Property="Margin" Value="5,12,2,2"/>
         </Style>
+
+        <Style x:Key="regeisterText" TargetType="TextBlock">
+            <Setter Property="Foreground" Value="Blue"/>
+            <Setter Property="HorizontalAlignment" Value="Right"/>
+            <Setter Property="Margin" Value="0,10,0,0"/>
+        </Style>
     </Window.Resources>
     <Grid >
         <Grid.RowDefinitions >
@@ -22,7 +28,7 @@
         </Grid>
 
         <Grid Grid.Row="1"  Width="300" Margin="250,51,250,172" HorizontalAlignment="Center" >
-
+            
             <Grid.RowDefinitions>
                 <RowDefinition Height="2*"/>
                 <RowDefinition Height="5*"/>
@@ -48,8 +54,8 @@
 
                     </StackPanel>
                     <StackPanel Grid.Column="1" HorizontalAlignment="Left" Width="150">
-                        <TextBox x:Name="txtUserName" Text="{Binding name}" Width="150" Margin="0,2,0,2"/>
-                        <TextBox x:Name="txtUserPassword" Text="{Binding password}" Width="150" Margin="0,2,0,2"/>
+                        <TextBox x:Name="txtUserName" Text="{Binding LoginVm.name}" Width="150" Margin="0,2,0,2"/>
+                        <TextBox x:Name="txtUserPassword" Text="{Binding LoginVm.password}" Width="150" Margin="0,2,0,2"/>
                     </StackPanel>
 
                 </Grid>
@@ -59,6 +65,9 @@
                     <StackPanel>
                         <CheckBox Content="记住密码" HorizontalAlignment="Left" Margin="61,10,0,0" VerticalAlignment="Top"/>
                         <Button Click="BtnLogin_Click" x:Name="btnLogin" Content="登录" HorizontalAlignment="Left" Margin="61,10,0,0" VerticalAlignment="Top" Width="200"/>
+                        <TextBlock Style="{StaticResource regeisterText}" >
+                                <Hyperlink Click="Hyperlink_Click">没有账户？点击注册</Hyperlink>
+                        </TextBlock>
                     </StackPanel>
                 </Grid>
             </Border>
